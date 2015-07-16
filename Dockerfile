@@ -6,27 +6,27 @@ ENV TERM screen
 
 
 #Applying stuff
-RUN apt-get update -q && \
-##DO STUFF HERE 
-## END EACH LINE WITH && \
-## EXEPT THE LINE BELOW
-apt-get clean && rm -rf /var/lib/apt/lists/* /var/tmp/*
+RUN apt-get update -q 
+RUN apt-get install -y git python
+RUN apt-get clean && rm -rf /var/lib/apt/lists/* /var/tmp/*
 
 
 #Adding Custom files
 ADD init/ /etc/my_init.d/
 ADD services/ /etc/service/
-ADD cron/ /etc/cron.d/
 RUN chmod -v +x /etc/service/*/run && chmod -v +x /etc/my_init.d/*.sh
+
 #Adding abc user
 RUN useradd -u 911 -U -s /bin/false abc && usermod -G users abc
+
 # Use baseimage-docker's init system
 CMD ["/sbin/my_init"]
 
 
 # Volums and Ports
-VOLUME /volume
-EXPOSE PORT
+VOLUME /config
+VOLUME /logs
+EXPOSE 8181
 
 
 ## NOTES ##
