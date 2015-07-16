@@ -2,7 +2,7 @@
 
 ## This is a Container in active development, and should not be used by the general public.
 If you are currious about the current progress or want to comment\contribute to this work, feel free to join us at out irc channel:
-[IRC](http://www.linuxserver.io/index.php/irc/) on freenode at `#linuxserver.io`.
+The [LinuxServer.io](http://linuxserver.io) team brings you another quality container release featuring auto-update on startup, easy user mapping and community support. Be sure to checkout our [forums](http://forum.linuxserver.io) or for real-time support our [IRC](http://www.linuxserver.io/index.php/irc/) on freenode at `#linuxserver.io`.
 
 # linuxserver/<container-name>
 
