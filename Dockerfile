@@ -1,14 +1,14 @@
 FROM phusion/baseimage:0.9.16
-MAINTAINER Your Name <your@email.com>
+MAINTAINER lonix <lonixx@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 ENV HOME /root
 ENV TERM screen
 
 
 #Applying stuff
-RUN apt-get update -q 
-RUN apt-get install -y git python
-RUN apt-get clean && rm -rf /var/lib/apt/lists/* /var/tmp/*
+RUN apt-get update -q  && \
+apt-get install -y git python && \
+apt-get clean && rm -rf /var/lib/apt/lists/* /var/tmp/*
 
 
 #Adding Custom files
