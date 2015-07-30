@@ -1,9 +1,5 @@
-FROM phusion/baseimage:0.9.16
+FROM linuxserver/baseimage
 MAINTAINER lonix <lonixx@gmail.com>
-ENV DEBIAN_FRONTEND noninteractive
-ENV HOME /root
-ENV TERM screen
-
 
 #Applying stuff
 RUN apt-get update -q  && \
