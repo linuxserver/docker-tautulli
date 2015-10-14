@@ -21,7 +21,7 @@ docker create --name=plexpy -v /etc/localtime:/etc/localtime:ro -v <path to data
 * `-e PGID` for for GroupID - see below for explanation
 * `-e PUID` for for UserID - see below for explanation
 
-It is based on phusion-baseimage with ssh removed, for shell access whilst the container is running do `docker exec -it quassel-core /bin/bash`.
+It is based on phusion-baseimage with ssh removed, for shell access whilst the container is running do `docker exec -it plexpy /bin/bash`.
 
 ### User / Group Identifiers
 

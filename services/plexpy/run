@@ -1,2 +1,3 @@
 #!/bin/bash
-exec /sbin/setuser abc /usr/bin/python /opt/plexpy/PlexPy.py --datadir /config 
+exec /sbin/setuser abc /usr/bin/python /opt/plexpy/PlexPy.py --datadir /config
+
