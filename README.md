@@ -9,7 +9,7 @@ The [LinuxServer.io](http://linuxserver.io) team brings you another quality cont
 ## Usage
 
 ```
-docker create --name=plexpy -v /etc/localtime:/etc/localtime:ro -v <path to data>:/config -v <path to plexlogs>:/logs:ro -e PGID=<gid> -e PUID=<uid>  -p 8181:8181 linuxserver/plexpy
+docker run -i --name=plexpy -v /etc/localtime:/etc/localtime:ro -v <path to data>:/config -v <path to plexlogs>:/logs:ro -e PGID=<gid> -e PUID=<uid>  -p 8181:8181 linuxserver/plexpy
 ```
 
 **Parameters**
