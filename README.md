@@ -15,7 +15,7 @@ docker create --name=plexpy -v /etc/localtime:/etc/localtime:ro -v <path to data
 **Parameters**
 
 * `-p 8181` - Port for webui
-* `-v /etc/localhost` for timesync - *optional*
+* `-v /etc/localtime` for timesync - *optional*
 * `-v /config` Containes plexpy config and database
 * `-v /logs` Map this to PLex Media servers log directory - bonus points for mapping RO
 * `-e PGID` for for GroupID - see below for explanation
