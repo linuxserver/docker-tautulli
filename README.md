@@ -4,12 +4,19 @@ The [LinuxServer.io](http://linuxserver.io) team brings you another quality cont
 
 # linuxserver/plexpy
 
-[Plexpy](https://github.com/drzoidberg33/plexpy/) Is a Python-based Plex Usage tracker, that is currently in active development. 
+[Plexpy](https://github.com/drzoidberg33/plexpy/) Is a Python-based Plex Usage tracker, that is currently in active development.
 
 ## Usage
 
 ```
-docker create --name=plexpy -v /etc/localtime:/etc/localtime:ro -v <path to data>:/config -v <path to plexlogs>:/logs:ro -e PGID=<gid> -e PUID=<uid>  -p 8181:8181 linuxserver/plexpy
+docker create \ 
+  --name=plexpy \
+  -v /etc/localtime:/etc/localtime:ro \
+  -v <path to data>:/config \
+  -v <path to plexlogs>:/logs:ro \
+  -e PGID=<gid> -e PUID=<uid>  \
+  -p 8181:8181 \
+  linuxserver/plexpy
 ```
 
 **Parameters**
