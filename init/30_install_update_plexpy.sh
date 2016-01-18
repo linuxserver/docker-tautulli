@@ -1,11 +1,12 @@
 #!/bin/bash
 
+[[ ! -d /opt/plexpy/.git ] && (git clone https://github.com/drzoidberg33/plexpy.git /opt/plexpy && \
+chown -R abc:abc /config)
 
-if [ ! -d /opt/plexpy/.git ]; then
-	git clone https://github.com/drzoidberg33/plexpy.git /opt/plexpy
-else
-	cd /opt/plexpy
-	git pull
-fi
+# opt out for autoupdates
+[ "$ADVANCED_DISABLEUPDATES" ] && exit 0
 
+cd /opt/plexpy
+git pull
 chown -R abc:abc /config
+
