@@ -1,7 +1,7 @@
-FROM linuxserver/baseimage
+FROM linuxserver/baseimage.python27
 MAINTAINER lonix <lonixx@gmail.com>
 
-ENV APTLIST="git python"
+ENV APTLIST="python-openssl"
 
 #Applying stuff
 RUN apt-get update -q  && \
