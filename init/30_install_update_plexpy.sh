@@ -1,6 +1,7 @@
 #!/bin/bash
-
-[[ ! -d /opt/plexpy/.git ]] && (git clone https://github.com/drzoidberg33/plexpy.git /opt/plexpy && \
+[ $DEV ] && BRANCH="dev" || BRANCH="master"
+echo "Cloning $BRANCH branch..."
+[[ ! -d /opt/plexpy/.git ]] && (git clone https://github.com/drzoidberg33/plexpy.git --branch $BRANCH /opt/plexpy && \
 chown -R abc:abc /config)
 
 # opt out for autoupdates
