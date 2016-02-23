@@ -1,6 +1,4 @@
 #!/bin/bash
-[ "$NO_SELF_SIGN_CERT" ] && { echo "NOT creating Self Signed certificate"; exit 0; }
-
 SUBJECT="//C=US/ST=CA/L=Carlsbad/O=Linuxserver.io/OU=LSIO Server/CN=*"
 if [[ -f /config/server.key && -f /config/server.crt ]]; then
   echo "Using keys found in /config/"
