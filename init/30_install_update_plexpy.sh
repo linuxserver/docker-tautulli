@@ -1,10 +1,11 @@
 #!/bin/bash
-#If variable $ADVANCED_DEV_BRANCH, set branch to DEV, otherwise, default to master
-[ "$ADVANCED_DEV_BRANCH" ] && BRANCH="dev" || BRANCH="master"
-#Display Warning message
-[ "$ADVANCED_DEV_BRANCH" ] && echo "BRANCH IS DEV, NO DOCKER SUPPORT WITH THIS BRANCH, THANKS"
-echo "Cloning $BRANCH branch..."
-[[ ! -d /opt/plexpy/.git ]] && (git clone https://github.com/drzoidberg33/plexpy.git --branch $BRANCH /opt/plexpy && \
+#If variable $ADVANCED_GIT_BRANCH, set branch to DEV, otherwise, default to master
+[ "$ADVANCED_GIT_BRANCH" ] && $GIT_BRANCH=$ADVANCED_GIT_BRANCH && \
+echo "BRANCH: $ADVANCED_GIT_BRANCH, Warning! This is unsupported."|| GIT_BRANCH="master"
+
+
+[[ ! -d /opt/plexpy/.git ]] && (echo "Cloning $GIT_BRANCH branch..." && \
+git clone https://github.com/drzoidberg33/plexpy.git --branch $GIT_BRANCH /opt/plexpy && \
 chown -R abc:abc /config)
 
 # opt out for autoupdates
@@ -13,4 +14,3 @@ chown -R abc:abc /config)
 cd /opt/plexpy
 git pull
 chown -R abc:abc /config
-
