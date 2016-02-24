@@ -1,5 +1,5 @@
 #!/bin/bash
-#If variable $ADVANCED_GIT_BRANCH, set branch to DEV, otherwise, default to master
+#If variable $ADVANCED_GIT_BRANCH, set branch to $GIT_BRANCH, otherwise, default to master
 [ "$ADVANCED_GIT_BRANCH" ] && $GIT_BRANCH=$ADVANCED_GIT_BRANCH && \
 echo "BRANCH: $ADVANCED_GIT_BRANCH, Warning! This is unsupported."|| GIT_BRANCH="master"
 
