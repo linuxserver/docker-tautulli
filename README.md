@@ -9,7 +9,7 @@ docker create \
   --name=rsscrawler \
   -v /etc/localtime:/etc/localtime:ro \
   -v <path to script>:/config \
-  -v <path to folderwatch>:/jd2:ro \
+  -v <path to folderwatch>:/jd2 \
   -e PGID=<gid> -e PUID=<uid>  \
   linuxserver/rsscrawler
 ```
