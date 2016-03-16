@@ -1,30 +1,25 @@
-![https://linuxserver.io](https://www.linuxserver.io/wp-content/uploads/2015/06/linuxserver_medium.png)
+This docker setup for my python-based script crawls pre-defined RSS feeds and outputs JD2-crawljobs
 
-The [LinuxServer.io](https://linuxserver.io) team brings you another quality container release featuring auto-update on startup, easy user mapping and community support. Be sure to checkout our [forums](https://forum.linuxserver.io) or for real-time support our [IRC](https://www.linuxserver.io/index.php/irc/) on freenode at `#linuxserver.io`.
-
-# linuxserver/plexpy
-
-[Plexpy](https://github.com/drzoidberg33/plexpy/) Is a Python-based Plex Usage tracker, that is currently in active development.
+Fork of: linuxserver/plexpy
 
 ## Usage
 
 ```
 docker create \ 
-  --name=plexpy \
+  --name=rsscrawler \
   -v /etc/localtime:/etc/localtime:ro \
-  -v <path to data>:/config \
-  -v <path to plexlogs>:/logs:ro \
+  -v <path to script>:/config \
+  -v <path to folderwatch>:/jd2:ro \
   -e PGID=<gid> -e PUID=<uid>  \
-  -p 8181:8181 \
-  linuxserver/plexpy
+  linuxserver/rsscrawler
 ```
 
 **Parameters**
 
 * `-p 8181` - Port for webui
-* `-v /etc/localtime` for timesync - *optional*
-* `-v /config` Containes plexpy config and database
-* `-v /logs` Map this to PLex Media servers log directory - bonus points for mapping RO
+* `-v /etc/localtime` for timesync
+* `-v /config` Containes RSScrawler config and database
+* `-v /jd2` Map this to your JDownloaders folderwatch location (that feature needs to be enabled!)
 * `-e PGID` for for GroupID - see below for explanation
 * `-e PUID` for for UserID - see below for explanation
 
@@ -40,11 +35,11 @@ Part of what makes our containers work so well is by allowing you to specify you
 
 ## Updates
 
-* Upgrade to the latest version simply `docker restart plexpy`.
-* To monitor the logs of the container in realtime `docker logs -f plexpy`.
+* Upgrade to the latest version simply `docker restart rsscrawler`.
+* To monitor the logs of the container in realtime `docker logs -f rsscrawler`.
 
 
 
 ## Versions
 
-+ **16.07.2015:** Inital Release
++ **16.03.2016:** Inital Release
