@@ -1,0 +1,4 @@
+docopt
+feedparser
+BeautifulSoup
+pycurl
