@@ -22,7 +22,6 @@ docker create \
 **Parameters**
 
 * `-p 8181` - Port for webui
-* `-v /etc/localtime` for timesync - *optional*
 * `-v /config` Containes plexpy config and database
 * `-v /logs` Map this to PLex Media servers log directory - bonus points for mapping RO
 * `-e PGID` for GroupID - see below for explanation
