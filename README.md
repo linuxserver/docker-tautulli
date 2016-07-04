@@ -15,7 +15,6 @@ docker create \
   -v <path to data>:/config \
   -v <path to plexlogs>:/logs:ro \
   -e PGID=<gid> -e PUID=<uid>  \
-  -e ADVANCED_GIT_BRANCH=<branch> \
   -p 8181:8181 \
   linuxserver/plexpy
 ```
@@ -28,9 +27,8 @@ docker create \
 * `-v /logs` Map this to PLex Media servers log directory - bonus points for mapping RO
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
-* `-e ADVANCED_GIT_BRANCH` to choose a specfic branch ( no support on the app if changed )
 
-It is based on phusion-baseimage with ssh removed, for shell access whilst the container is running do `docker exec -it plexpy /bin/bash`.
+It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it plexpy /bin/bash`.
 
 ### User / Group Identifiers
 
@@ -49,4 +47,5 @@ Part of what makes our containers work so well is by allowing you to specify you
 
 ## Versions
 
-+ **16.07.2015:** Inital Release
++ **04.07.16:** Rebase to alpine linux for smaller image
++ **16.07.15:** Inital Release
