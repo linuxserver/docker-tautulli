@@ -11,10 +11,10 @@ The [LinuxServer.io](https://linuxserver.io) team brings you another quality con
 ```
 docker create \ 
   --name=plexpy \
-  -v /etc/localtime:/etc/localtime:ro \
   -v <path to data>:/config \
   -v <path to plexlogs>:/logs:ro \
   -e PGID=<gid> -e PUID=<uid>  \
+  -e TZ=<timezone> \
   -p 8181:8181 \
   linuxserver/plexpy
 ```
@@ -27,6 +27,7 @@ docker create \
 * `-v /logs` Map this to PLex Media servers log directory - bonus points for mapping RO
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
+* `-e TZ` for setting timezone information, eg Europe/London
 
 It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it plexpy /bin/bash`.
 
