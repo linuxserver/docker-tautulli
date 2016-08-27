@@ -7,7 +7,15 @@ The [LinuxServer.io](https://linuxserver.io) team brings you another container r
 
 # linuxserver/plexpy
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/plexpy.svg)][hub]
+[![Docker Stars](https://img.shields.io/docker/stars/linuxserver/plexpy.svg)][hub]
+[![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-plexpy)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-plexpy/)
+[hub]: https://hub.docker.com/r/linuxserver/plexpy/
+
 [Plexpy](https://github.com/drzoidberg33/plexpy/) Is a Python-based Plex Usage tracker, that is currently in active development.
+
+[!plexpy](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/plexpy-banner.png)][plexpyurl]
+[plexpyurl]: https://github.com/drzoidberg33/plexpy/
 
 ## Usage
 
@@ -50,5 +58,6 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 ## Versions
 
++ **27.08.16:** Add badges to README.
 + **08.08.16:** Rebase to alpine linux.
 + **16.07.15:** Inital Release.
