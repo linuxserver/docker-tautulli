@@ -14,7 +14,7 @@ The [LinuxServer.io](https://linuxserver.io) team brings you another container r
 
 [Plexpy](https://github.com/drzoidberg33/plexpy/) Is a Python-based Plex Usage tracker, that is currently in active development.
 
-[![plexpy](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/plexpy-banner.png)][plexpyurl]
+[![plexpy](https://15254b2dcaab7f5478ab-24461f391e20b7336331d5789078af53.ssl.cf1.rackcdn.com/plex.vanillacommunity.com/editor/nt/f3vfwj7miknj.png)][plexpyurl]
 [plexpyurl]: https://github.com/drzoidberg33/plexpy/
 
 ## Usage
