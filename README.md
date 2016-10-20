@@ -12,7 +12,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 
 # linuxserver/plexpy
 
-[![](https://images.microbadger.com/badges/image/linuxserver/plexpy.svg)](http://microbadger.com/images/linuxserver/plexpy "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/plexpy.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/plexpy.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-plexpy)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-plexpy/)
+[![](https://images.microbadger.com/badges/image/linuxserver/plexpy.svg)](http://microbadger.com/images/linuxserver/plexpy "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/plexpy.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/plexpy.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-hub-built/linuxserver-plexpy)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-hub-built/job/linuxserver-plexpy/)
 [hub]: https://hub.docker.com/r/linuxserver/plexpy/
 
 [Plexpy](https://github.com/drzoidberg33/plexpy/) Is a Python-based Plex Usage tracker, that is currently in active development.
