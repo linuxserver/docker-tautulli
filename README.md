@@ -15,10 +15,10 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 [![](https://images.microbadger.com/badges/image/linuxserver/plexpy.svg)](http://microbadger.com/images/linuxserver/plexpy "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/plexpy.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/plexpy.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-hub-built/linuxserver-plexpy)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-hub-built/job/linuxserver-plexpy/)
 [hub]: https://hub.docker.com/r/linuxserver/plexpy/
 
-[Plexpy](https://github.com/drzoidberg33/plexpy/) Is a Python-based Plex Usage tracker, that is currently in active development.
+[Plexpy][plexpyurl] Is a Python-based Plex Usage tracker, that is currently in active development.
 
 [![plexpy](https://15254b2dcaab7f5478ab-24461f391e20b7336331d5789078af53.ssl.cf1.rackcdn.com/plex.vanillacommunity.com/editor/nt/f3vfwj7miknj.png)][plexpyurl]
-[plexpyurl]: https://github.com/drzoidberg33/plexpy/
+[plexpyurl]: https://github.com/JonnyWong16/plexpy
 
 ## Usage
 
@@ -62,7 +62,7 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 ```
 
 ## Setting up the application
-Access the webui at `<your-ip>:8181`, for more information check out [Plexpy](https://github.com/drzoidberg33/plexpy)..
+Access the webui at `<your-ip>:8181`, for more information check out [Plexpy][plexpyurl].
 
 ## Info
 
