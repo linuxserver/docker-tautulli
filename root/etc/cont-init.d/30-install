@@ -7,7 +7,7 @@
 
 # install app 
 [[ ! -d "/opt/plexpy/.git" ]] && \
-	git clone --branch $ADVANCED_GIT_BRANCH https://github.com/drzoidberg33/plexpy.git /opt/plexpy
+	git clone --branch $ADVANCED_GIT_BRANCH https://github.com/JonnyWong16/plexpy.git /opt/plexpy
 
 # permissions
 chown -R abc:abc \
