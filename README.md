@@ -70,6 +70,7 @@ Access the webui at `<your-ip>:8181`, for more information check out [Plexpy][pl
 
 ## Versions
 
++ **07.02.17:** Rebase to alpine 3.5.
 + **09.09.16:** Add layer badges to README.
 + **27.08.16:** Add badges to README.
 + **08.08.16:** Rebase to alpine linux.
