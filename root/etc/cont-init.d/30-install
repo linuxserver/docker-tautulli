@@ -11,4 +11,5 @@
 
 # permissions
 chown -R abc:abc \
-	/opt/plexpy
+	/opt/plexpy \
+	/config
