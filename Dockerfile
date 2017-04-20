@@ -4,18 +4,20 @@ MAINTAINER sparklyballs
 # install packages
 RUN \
  apk add --no-cache --virtual=build-dependencies \
-     g++ \
-     gcc \
-     make \
-     python-dev && \
+	g++ \
+	gcc \
+	make \
+	python-dev && \
 
 # install pycryptodomex
- pip install \
-     pycryptodomex && \
- 
+ pip install --no-cache-dir -U \
+	pycryptodomex && \
+
 # cleanup
  apk del --purge \
-     build-dependencies
+	build-dependencies && \
+ rm -rf \
+	/root/.cache
 
 # add local files
 COPY root/ /
