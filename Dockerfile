@@ -7,14 +7,15 @@ RUN \
      g++ \
      gcc \
      make \
-     python-dev &&
+     python-dev && \
 
 # install pycryptodomex
- pip install pycryptodomex && \
+ pip install \
+     pycryptodomex && \
  
 # cleanup
  apk del --purge \
-	build-dependencies && \
+     build-dependencies
 
 # add local files
 COPY root/ /
