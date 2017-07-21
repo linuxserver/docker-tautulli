@@ -1,5 +1,5 @@
 #!/usr/bin/with-contenv bash
 
 exec \
-	s6-setuidgid abc python /opt/plexpy/PlexPy.py \
+	s6-setuidgid abc python /app/plexpy/PlexPy.py \
 	--datadir /config
