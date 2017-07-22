@@ -18,6 +18,9 @@ RUN \
  pip install --no-cache-dir -U \
 	pycryptodomex && \
 
+# install app
+ git clone --depth 1 https://github.com/JonnyWong16/plexpy /app/plexpy && \
+
 # cleanup
  apk del --purge \
 	build-dependencies && \
