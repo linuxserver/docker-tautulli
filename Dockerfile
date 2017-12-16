@@ -1,27 +1,24 @@
-FROM lsiobase/alpine.python:3.6
-MAINTAINER sparklyballs
+FROM lsiobase/alpine.python:3.7
 
 # set version label
 ARG BUILD_DATE
 ARG VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
+LABEL maintainer="sparklyballs"
 
-# install packages
 RUN \
+ echo "**** install packages ****" && \
  apk add --no-cache --virtual=build-dependencies \
 	g++ \
 	gcc \
 	make \
 	python-dev && \
-
-# install pycryptodomex
+ echo "**** install pip packages ****" && \
  pip install --no-cache-dir -U \
 	pycryptodomex && \
-
-# install app
+ echo "**** install app ****" && \
  git clone --depth 1 https://github.com/JonnyWong16/plexpy /app/plexpy && \
-
-# cleanup
+ echo "**** cleanup ****" && \
  apk del --purge \
 	build-dependencies && \
  rm -rf \
