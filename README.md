@@ -42,12 +42,12 @@ http://192.168.x.x:8080 would show you what's running INSIDE the container on po
 
 * `-p 8181` - Port for webui
 * `-v /config` Containes tautulli config and database
-* `-v /logs` Map this to PLex Media servers log directory - bonus points for mapping RO
+* `-v /logs` Map this to Plex Media servers log directory - bonus points for mapping RO
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
 * `-e TZ` for setting timezone information, eg Europe/London
 
-It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it plexpy /bin/bash`.
+It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it tautulli /bin/bash`.
 
 ### User / Group Identifiers
 
