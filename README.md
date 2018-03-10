@@ -2,8 +2,8 @@
 [forumurl]: https://forum.linuxserver.io
 [ircurl]: https://www.linuxserver.io/irc/
 [podcasturl]: https://www.linuxserver.io/podcast/
-[appurl]: https://github.com/JonnyWong16/plexpy
-[hub]: https://hub.docker.com/r/linuxserver/plexpy/
+[appurl]: http://tautulli.com
+[hub]: https://hub.docker.com/r/linuxserver/tautulli/
 
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
 
@@ -12,24 +12,24 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [IRC][ircurl] on freenode at `#linuxserver.io`
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
-# linuxserver/plexpy
-[![](https://images.microbadger.com/badges/version/linuxserver/plexpy.svg)](https://microbadger.com/images/linuxserver/plexpy "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/linuxserver/plexpy.svg)](https://microbadger.com/images/linuxserver/plexpy "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/plexpy.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/plexpy.svg)][hub][![Build Status](https://ci.linuxserver.io/buildStatus/icon?job=Docker-Builders/x86-64/x86-64-plexpy)](https://ci.linuxserver.io/job/Docker-Builders/job/x86-64/job/x86-64-plexpy/)
+# linuxserver/tautulli
+[![](https://images.microbadger.com/badges/version/linuxserver/tautulli.svg)](https://microbadger.com/images/linuxserver/tautulli "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/linuxserver/tautulli.svg)](https://microbadger.com/images/linuxserver/tautulli "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/tautulli.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/tautulli.svg)][hub][![Build Status](https://ci.linuxserver.io/buildStatus/icon?job=Docker-Builders/x86-64/x86-64-tautulli)](https://ci.linuxserver.io/job/Docker-Builders/job/x86-64/job/x86-64-tautulli/)
 
-[Plexpy][appurl] Is a Python-based Plex Usage tracker, that is currently in active development.
+[Tautulli][appurl] A python based web application for monitoring, analytics and notifications for Plex Media Server.
 
-[![plexpy](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/plexpy-banner.png)][appurl]
+[![tautulli](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/tautulli-icon.png)][appurl]
 
 ## Usage
 
 ```
 docker create \ 
-  --name=plexpy \
+  --name=tautulli \
   -v <path to data>:/config \
-  -v <path to plexlogs>:/logs:ro \
+  -v <path to plex logs>:/logs:ro \
   -e PGID=<gid> -e PUID=<uid>  \
   -e TZ=<timezone> \
   -p 8181:8181 \
-  linuxserver/plexpy
+  linuxserver/tautulli
 ```
 
 ## Parameters
@@ -41,13 +41,13 @@ http://192.168.x.x:8080 would show you what's running INSIDE the container on po
 
 
 * `-p 8181` - Port for webui
-* `-v /config` Containes plexpy config and database
-* `-v /logs` Map this to PLex Media servers log directory - bonus points for mapping RO
+* `-v /config` Contains tautulli config and database
+* `-v /logs` Map this to PLex log directory - recommended RO
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
 * `-e TZ` for setting timezone information, eg Europe/London
 
-It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it plexpy /bin/bash`.
+It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it tautulli /bin/bash`.
 
 ### User / Group Identifiers
 
@@ -61,22 +61,23 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 ```
 
 ## Setting up the application
-Access the webui at `<your-ip>:8181`, for more information check out [Plexpy][appurl].
+Access the webui at `<your-ip>:8181`, for more information check out [Tautulli][appurl].
 
 ## Info
 
-* To monitor the logs of the container in realtime `docker logs -f plexpy`.
+* To monitor the logs of the container in realtime `docker logs -f tautulli`.
 
 * container version number 
 
-`docker inspect -f '{{ index .Config.Labels "build_version" }}' plexpy`
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' tautulli`
 
 * image version number
 
-`docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/plexpy`
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/tautulli`
 
 ## Versions
 
++ **10.03.18:** Rebrand to tautulli.
 + **12.12.17:** Rebase to alpine 3.7.
 + **21.07.17:** Internal git pull instead of at runtime.
 + **12.07.17:** Add inspect commands to README, move to jenkins build and push.

@@ -15,9 +15,10 @@ RUN \
 	python-dev && \
  echo "**** install pip packages ****" && \
  pip install --no-cache-dir -U \
+	plexapi \
 	pycryptodomex && \
  echo "**** install app ****" && \
- git clone --depth 1 https://github.com/JonnyWong16/plexpy /app/plexpy && \
+ git clone --depth 1 https://github.com/Tautulli/Tautulli /app/tautulli && \
  echo "**** cleanup ****" && \
  apk del --purge \
 	build-dependencies && \
