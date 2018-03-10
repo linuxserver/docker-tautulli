@@ -17,7 +17,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 
 [Tautulli][appurl] A python based web application for monitoring, analytics and notifications for Plex Media Server.
 
-[![tautulli](https://raw.githubusercontent.com/Tautulli/Tautulli-Docker/master/img/logo-circle.png)][appurl]
+[![tautulli](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/tautulli-icon.png)][appurl]
 
 ## Usage
 
