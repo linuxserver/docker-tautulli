@@ -17,7 +17,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 
 [Tautulli][appurl] A python based web application for monitoring, analytics and notifications for Plex Media Server.
 
-[![tautulli](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/plexpy-banner.png)][appurl]
+[![tautulli](https://raw.githubusercontent.com/Tautulli/Tautulli-Docker/master/img/logo-circle.png)][appurl]
 
 ## Usage
 
@@ -25,7 +25,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 docker create \ 
   --name=tautulli \
   -v <path to data>:/config \
-  -v <path to plexlogs>:/logs:ro \
+  -v <path to plex logs>:/logs:ro \
   -e PGID=<gid> -e PUID=<uid>  \
   -e TZ=<timezone> \
   -p 8181:8181 \
@@ -42,7 +42,7 @@ http://192.168.x.x:8080 would show you what's running INSIDE the container on po
 
 * `-p 8181` - Port for webui
 * `-v /config` Contains tautulli config and database
-* `-v /logs` Map this to PLex Media servers log directory - bonus points for mapping RO
+* `-v /logs` Map this to PLex log directory - recommended RO
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
 * `-e TZ` for setting timezone information, eg Europe/London
