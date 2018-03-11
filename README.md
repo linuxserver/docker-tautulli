@@ -32,6 +32,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another image release featu
 
 # linuxserver/tautulli
 [![](https://images.microbadger.com/badges/version/linuxserver/tautulli.svg)](https://microbadger.com/images/linuxserver/tautulli "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/linuxserver/tautulli.svg)](https://microbadger.com/images/linuxserver/tautulli "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/tautulli.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/tautulli.svg)][hub][![Build Status](https://ci.linuxserver.io/buildStatus/icon?job=Docker-Builders/x86-64/x86-64-tautulli)](https://ci.linuxserver.io/job/Docker-Builders/job/x86-64/job/x86-64-tautulli/)
+
 [![Dockerfile-link](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/Dockerfile-Link-green.png)][dockerfileurl]
 
 [Tautulli][appurl] A python based web application for monitoring, analytics and notifications for Plex Media Server.
