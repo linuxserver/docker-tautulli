@@ -108,7 +108,7 @@ Access the webui at `<your-ip>:8181`, for more information check out [Tautulli][
 
 &nbsp;
 
-## Versions
+## Changelog
 
 |  Date | Changes |
 | :---: | --- |
