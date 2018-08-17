@@ -16,6 +16,7 @@ RUN \
  echo "**** install pip packages ****" && \
  pip install --no-cache-dir -U \
 	plexapi \
+	pyopenssl \
 	pycryptodomex && \
  echo "**** install app ****" && \
  git clone --depth 1 https://github.com/Tautulli/Tautulli /app/tautulli && \
