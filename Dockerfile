@@ -12,6 +12,7 @@ RUN \
 	g++ \
 	gcc \
 	make \
+    jq \
 	python-dev && \
  echo "**** install pip packages ****" && \
  pip install --no-cache-dir -U \
