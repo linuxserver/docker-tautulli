@@ -69,7 +69,7 @@ http://192.168.x.x:8080 would show you what's running INSIDE the container on po
 | :---: | --- |
 | `-p 8181` | Port for webui |
 | `-v /config` | Contains tautulli config and database |
-| `-v /logs` | Map this to PLex log directory - recommended RO |
+| `-v /logs` | Map this to Plex log directory - recommended RO |
 | `-e PGID` | for GroupID, see below for explanation |
 | `-e PUID` | for UserID, see below for explanation |
 | `-e TZ` | for setting timezone information, eg Europe/London |
@@ -92,7 +92,8 @@ In this instance `PUID=1001` and `PGID=1001`, to find yours use `id user` as bel
 &nbsp;
 
 ## Setting up the application
-Access the webui at `<your-ip>:8181`, for more information check out [Tautulli][appurl].
+Access the webui at `<your-ip>:8181`, for more information check out [Tautulli][appurl].  
+In tautulli gui settings, under `Plex Media Server`, turn on `Show Advanced` and set the `Logs Folder` to `/logs`
 
 &nbsp;
 
@@ -112,6 +113,7 @@ Access the webui at `<your-ip>:8181`, for more information check out [Tautulli][
 
 |  Date | Changes |
 | :---: | --- |
+| 23.10.18 | Update plex logs info in readme. |
 | 16.08.18 | Rebase to alpine 3.8. |
 | 10.03.18 | Rebrand to tautulli. |
 | 12.12.17 | Rebase to alpine 3.7. |
