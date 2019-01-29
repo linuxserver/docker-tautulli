@@ -1,0 +1,29 @@
+---
+
+# jenkins variables
+project_name: docker-tautulli
+external_type: github_commit
+release_type: prerelease
+release_tag: develop
+ls_branch: develop
+repo_vars:
+  - EXT_GIT_BRANCH = 'master'
+  - EXT_USER = 'Tautulli'
+  - EXT_REPO = 'Tautulli'
+  - BUILD_VERSION_ARG = 'TAUTULLI_COMMIT'
+  - LS_USER = 'linuxserver'
+  - LS_REPO = 'docker-tautulli'
+  - CONTAINER_NAME = 'tautulli'
+  - DOCKERHUB_IMAGE = 'linuxserver/tautulli'
+  - DEV_DOCKERHUB_IMAGE = 'lsiodev/tautulli'
+  - PR_DOCKERHUB_IMAGE = 'lspipepr/tautulli'
+  - DIST_IMAGE = 'alpine'
+  - MULTIARCH='true'
+  - CI='true'
+  - CI_WEB='true'
+  - CI_PORT='8181'
+  - CI_SSL='false'
+  - CI_DELAY='120'
+  - CI_DOCKERENV='TZ=US/Pacific'
+  - CI_AUTH='user:password'
+  - CI_WEBPATH=''
