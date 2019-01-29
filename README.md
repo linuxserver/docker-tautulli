@@ -11,9 +11,9 @@
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png?v=4&s=4000)][linuxserverurl]
 
 
-## Contact information:- 
+## Contact information:-
 
-| Type | Address/Details | 
+| Type | Address/Details |
 | :---: | --- |
 | Discord | [Discord](https://discord.gg/YWrKVTn) |
 | IRC | freenode at `#linuxserver.io` more information at:- [IRC][ircurl]
@@ -44,7 +44,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another image release featu
 ## Usage
 
 ```
-docker create \ 
+docker create \
   --name=tautulli \
   -v <path to data>:/config \
   -v <path to plex logs>:/logs:ro \
@@ -58,7 +58,7 @@ docker create \
 
 ## Parameters
 
-The parameters are split into two halves, separated by a colon, the left hand side representing the host and the right the container side. 
+The parameters are split into two halves, separated by a colon, the left hand side representing the host and the right the container side.
 For example with a port -p external:internal - what this shows is the port mapping from internal to external of the container.
 So -p 8080:80 would expose port 80 from inside the container to be accessible from the host's IP on port 8080
 http://192.168.x.x:8080 would show you what's running INSIDE the container on port 80.
@@ -92,7 +92,7 @@ In this instance `PUID=1001` and `PGID=1001`, to find yours use `id user` as bel
 &nbsp;
 
 ## Setting up the application
-Access the webui at `<your-ip>:8181`, for more information check out [Tautulli][appurl].  
+Access the webui at `<your-ip>:8181`, for more information check out [Tautulli][appurl].
 In tautulli gui settings, under `Plex Media Server`, turn on `Show Advanced` and set the `Logs Folder` to `/logs`
 
 &nbsp;
@@ -113,6 +113,7 @@ In tautulli gui settings, under `Plex Media Server`, turn on `Show Advanced` and
 
 |  Date | Changes |
 | :---: | --- |
+| 26.01.19 | Add pipeline logic and multi arch. |
 | 23.10.18 | Update plex logs info in readme. |
 | 16.08.18 | Rebase to alpine 3.8. |
 | 10.03.18 | Rebrand to tautulli. |
