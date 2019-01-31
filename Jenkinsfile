@@ -10,7 +10,7 @@ pipeline {
   environment {
     BUILDS_DISCORD=credentials('build_webhook_url')
     GITHUB_TOKEN=credentials('498b4638-2d02-4ce5-832d-8a57d01d97ab')
-    EXT_GIT_BRANCH = 'master'
+    EXT_GIT_BRANCH = 'beta'
     EXT_USER = 'Tautulli'
     EXT_REPO = 'Tautulli'
     BUILD_VERSION_ARG = 'TAUTULLI_COMMIT'
@@ -467,8 +467,8 @@ pipeline {
           sh '''#! /bin/bash
              echo $DOCKERPASS | docker login -u $DOCKERUSER --password-stdin
              '''
-          sh "docker tag ${IMAGE}:${META_TAG} ${IMAGE}:develop"
-          sh "docker push ${IMAGE}:develop"
+          sh "docker tag ${IMAGE}:${META_TAG} ${IMAGE}:beta"
+          sh "docker push ${IMAGE}:beta"
           sh "docker push ${IMAGE}:${META_TAG}"
         }
       }
@@ -498,24 +498,24 @@ pipeline {
                   docker tag lsiodev/buildcache:arm32v6-${COMMIT_SHA}-${BUILD_NUMBER} ${IMAGE}:arm32v6-${META_TAG}
                   docker tag lsiodev/buildcache:arm64v8-${COMMIT_SHA}-${BUILD_NUMBER} ${IMAGE}:arm64v8-${META_TAG}
                 fi'''
-          sh "docker tag ${IMAGE}:amd64-${META_TAG} ${IMAGE}:amd64-develop"
-          sh "docker tag ${IMAGE}:arm32v6-${META_TAG} ${IMAGE}:arm32v6-develop"
-          sh "docker tag ${IMAGE}:arm64v8-${META_TAG} ${IMAGE}:arm64v8-develop"
+          sh "docker tag ${IMAGE}:amd64-${META_TAG} ${IMAGE}:amd64-beta"
+          sh "docker tag ${IMAGE}:arm32v6-${META_TAG} ${IMAGE}:arm32v6-beta"
+          sh "docker tag ${IMAGE}:arm64v8-${META_TAG} ${IMAGE}:arm64v8-beta"
           sh "docker push ${IMAGE}:amd64-${META_TAG}"
           sh "docker push ${IMAGE}:arm32v6-${META_TAG}"
           sh "docker push ${IMAGE}:arm64v8-${META_TAG}"
-          sh "docker push ${IMAGE}:amd64-develop"
-          sh "docker push ${IMAGE}:arm32v6-develop"
-          sh "docker push ${IMAGE}:arm64v8-develop"
-          sh "docker manifest push --purge ${IMAGE}:develop || :"
-          sh "docker manifest create ${IMAGE}:develop ${IMAGE}:amd64-develop ${IMAGE}:arm32v6-develop ${IMAGE}:arm64v8-develop"
-          sh "docker manifest annotate ${IMAGE}:develop ${IMAGE}:arm32v6-develop --os linux --arch arm"
-          sh "docker manifest annotate ${IMAGE}:develop ${IMAGE}:arm64v8-develop --os linux --arch arm64 --variant v8"
+          sh "docker push ${IMAGE}:amd64-beta"
+          sh "docker push ${IMAGE}:arm32v6-beta"
+          sh "docker push ${IMAGE}:arm64v8-beta"
+          sh "docker manifest push --purge ${IMAGE}:beta || :"
+          sh "docker manifest create ${IMAGE}:beta ${IMAGE}:amd64-beta ${IMAGE}:arm32v6-beta ${IMAGE}:arm64v8-beta"
+          sh "docker manifest annotate ${IMAGE}:beta ${IMAGE}:arm32v6-beta --os linux --arch arm"
+          sh "docker manifest annotate ${IMAGE}:beta ${IMAGE}:arm64v8-beta --os linux --arch arm64 --variant v8"
           sh "docker manifest push --purge ${IMAGE}:${META_TAG} || :"
           sh "docker manifest create ${IMAGE}:${META_TAG} ${IMAGE}:amd64-${META_TAG} ${IMAGE}:arm32v6-${META_TAG} ${IMAGE}:arm64v8-${META_TAG}"
           sh "docker manifest annotate ${IMAGE}:${META_TAG} ${IMAGE}:arm32v6-${META_TAG} --os linux --arch arm"
           sh "docker manifest annotate ${IMAGE}:${META_TAG} ${IMAGE}:arm64v8-${META_TAG} --os linux --arch arm64 --variant v8"
-          sh "docker manifest push --purge ${IMAGE}:develop"
+          sh "docker manifest push --purge ${IMAGE}:beta"
           sh "docker manifest push --purge ${IMAGE}:${META_TAG}"
         }
       }
