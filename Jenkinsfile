@@ -10,7 +10,7 @@ pipeline {
   environment {
     BUILDS_DISCORD=credentials('build_webhook_url')
     GITHUB_TOKEN=credentials('498b4638-2d02-4ce5-832d-8a57d01d97ab')
-    EXT_GIT_BRANCH = 'master'
+    EXT_GIT_BRANCH = 'nightly'
     EXT_USER = 'Tautulli'
     EXT_REPO = 'Tautulli'
     BUILD_VERSION_ARG = 'TAUTULLI_COMMIT'
