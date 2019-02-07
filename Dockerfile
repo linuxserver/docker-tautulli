@@ -5,7 +5,10 @@ ARG BUILD_DATE
 ARG VERSION
 ARG TAUTULLI_RELEASE
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
-LABEL maintainer="sparklyballs"
+LABEL maintainer="sparklyballs,thelamer"
+
+# Inform app this is a docker env
+ENV TAUTULLI_DOCKER=True
 
 RUN \
  echo "**** install packages ****" && \
@@ -30,6 +33,10 @@ RUN \
  tar xf \
  /tmp/tautulli.tar.gz -C \
 	/app/tautulli --strip-components=1 && \
+ echo "**** Hard Coding versioning ****" && \
+ echo "None" > /app/tautulli/version.txt && \
+ echo "None" > /app/tautulli/version.lock && \
+ echo ${TAUTULLI_RELEASE} > /app/tautulli/release.lock && \
  echo "**** cleanup ****" && \
  apk del --purge \
 	build-dependencies && \
