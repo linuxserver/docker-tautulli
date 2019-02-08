@@ -17,7 +17,8 @@ RUN \
 	make \
 	python-dev && \
  apk add --no-cache \
-        git && \
+        git \
+	jq && \
  echo "**** install pip packages ****" && \
  pip install --no-cache-dir -U \
 	plexapi \
