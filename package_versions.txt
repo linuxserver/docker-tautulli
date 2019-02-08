@@ -63,3 +63,5 @@ unzip unzip-6.0-r4
 libgd libgd-2.2.5-r1
 vnstat vnstat-1.18-r0
 wget wget-1.20.1-r0
+oniguruma oniguruma-6.8.2-r0
+jq jq-1.6_rc1-r1
