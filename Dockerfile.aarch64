@@ -20,6 +20,8 @@ RUN \
 	gcc \
 	make \
 	python-dev && \
+ apk add --no-cache \
+        jq && \
  echo "**** install pip packages ****" && \
  pip install --no-cache-dir -U \
 	plexapi \
@@ -28,7 +30,7 @@ RUN \
  mkdir -p /app/tautulli && \
  if [ -z ${TAUTULLI_RELEASE+x} ]; then \
 	TAUTULLI_RELEASE=$(curl -sX GET "https://api.github.com/repos/Tautulli/Tautulli/releases/latest" \
-	| awk '/tag_name/{print $4;exit}' FS='[""]'); \
+	| jq -r '. | .tag_name'); \
  fi && \
  curl -o \
  /tmp/tautulli.tar.gz -L \
