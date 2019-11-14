@@ -39,7 +39,7 @@ ncurses-libs-6.1_p20190518-r0
 ncurses-terminfo-6.1_p20190518-r0
 ncurses-terminfo-base-6.1_p20190518-r0
 nghttp2-libs-1.39.2-r0
-oniguruma-6.9.2-r0
+oniguruma-6.9.3-r0
 openjpeg-2.3.1-r0
 openssl-1.1.1d-r0
 p7zip-16.02-r3
@@ -54,7 +54,7 @@ shadow-4.6-r2
 sqlite-libs-3.28.0-r1
 ssl_client-1.30.1-r3
 tar-1.32-r0
-tiff-4.0.10-r1
+tiff-4.0.10-r2
 tzdata-2019c-r0
 unrar-5.7.5-r0
 unzip-6.0-r4
