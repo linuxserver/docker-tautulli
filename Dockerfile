@@ -1,4 +1,4 @@
-FROM lsiobase/python:3.10
+FROM lsiobase/python:3.11
 
 # set version label
 ARG BUILD_DATE
