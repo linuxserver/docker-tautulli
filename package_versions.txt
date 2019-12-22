@@ -51,7 +51,7 @@ python2-2.7.16-r1
 readline-8.0.0-r0
 scanelf-1.2.3-r0
 shadow-4.6-r2
-sqlite-libs-3.28.0-r1
+sqlite-libs-3.28.0-r2
 ssl_client-1.30.1-r3
 tar-1.32-r0
 tiff-4.0.10-r3
