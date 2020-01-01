@@ -22,6 +22,7 @@ RUN \
  echo "**** install pip packages ****" && \
  pip install --no-cache-dir -U \
 	plexapi \
+	jsonrpclib-pelix \
 	pycryptodomex && \
  echo "**** install app ****" && \
  mkdir -p /app/tautulli && \
