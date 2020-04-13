@@ -53,7 +53,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
-  - { date: "12.04.20:", desc: "Added mock from pip." }
+  - { date: "12.04.20:", desc: "Added mock from pip and donate links." }
   - { date: "19.12.19:", desc: "Rebasing to alpine 3.11." }
   - { date: "28.06.19:", desc: "Rebasing to alpine 3.10." }
   - { date: "23.03.19:", desc: "Switching to new Base images, shift to arm32v7 tag." }
