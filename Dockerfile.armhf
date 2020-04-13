@@ -21,6 +21,7 @@ RUN \
         jq && \
  echo "**** install pip packages ****" && \
  pip install --no-cache-dir -U \
+	mock \
 	plexapi \
 	pycryptodomex && \
  echo "**** install app ****" && \
