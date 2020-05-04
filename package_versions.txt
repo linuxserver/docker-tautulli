@@ -46,7 +46,7 @@ p7zip-16.02-r3
 pcre2-10.34-r0
 py-setuptools-42.0.2-r0
 py2-pip-18.1-r0
-python2-2.7.16-r3
+python2-2.7.18-r0
 readline-8.0.1-r0
 scanelf-1.2.4-r0
 shadow-4.7-r0
