@@ -30,7 +30,7 @@ RUN \
  mkdir -p /app/tautulli && \
  git clone https://github.com/Tautulli/Tautulli.git /app/tautulli && \
  cd /app/tautulli && \
- git checkout python3 && \
+ git checkout nightly && \
  echo "**** Hard Coding versioning ****" && \
  echo "${VERSION}" > /app/tautulli/version.txt && \
  echo "python3" > /app/tautulli/branch.txt && \
