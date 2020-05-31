@@ -33,7 +33,7 @@ RUN \
  git checkout nightly && \
  echo "**** Hard Coding versioning ****" && \
  echo "${VERSION}" > /app/tautulli/version.txt && \
- echo "python3" > /app/tautulli/branch.txt && \
+ echo "nightly" > /app/tautulli/branch.txt && \
  echo "**** cleanup ****" && \
  apk del --purge \
 	build-dependencies && \
