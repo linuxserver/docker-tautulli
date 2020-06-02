@@ -25,7 +25,8 @@ RUN \
  pip3 install --no-cache-dir -U \
 	mock \
 	plexapi \
-	pycryptodomex && \
+	pycryptodomex \
+	setuptools && \
  echo "**** install app ****" && \
  mkdir -p /app/tautulli && \
  git clone https://github.com/Tautulli/Tautulli.git /app/tautulli && \
