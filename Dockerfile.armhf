@@ -20,13 +20,13 @@ RUN \
  echo "**** install packages ****" && \
  apk add --no-cache \
 	git \
+	py3-setuptools \
 	python3 && \
  echo "**** install pip packages ****" && \
  pip3 install --no-cache-dir -U \
 	mock \
 	plexapi \
-	pycryptodomex \
-	setuptools && \
+	pycryptodomex && \
  echo "**** install app ****" && \
  mkdir -p /app/tautulli && \
  git clone https://github.com/Tautulli/Tautulli.git /app/tautulli && \
