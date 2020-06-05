@@ -1,5 +1,5 @@
 #!/usr/bin/with-contenv bash
 
 exec \
-	s6-setuidgid abc python /app/tautulli/PlexPy.py \
+	s6-setuidgid abc python3 /app/tautulli/Tautulli.py \
 	--datadir /config
