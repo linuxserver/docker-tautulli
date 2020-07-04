@@ -21,7 +21,9 @@ RUN \
 	python3-dev && \
  echo "**** install packages ****" && \
  apk add --no-cache \
-        jq && \
+	jq \
+	py3-setuptools \
+	python3 && \
  echo "**** install pip packages ****" && \
  pip3 install --no-cache-dir -U \
 	mock \
