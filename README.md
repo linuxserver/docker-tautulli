@@ -226,6 +226,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **11.07.20:** - Add py3-openssl.
 * **05.06.20:** - Rebasing to alpine 3.12. Rework to python3.
 * **12.04.20:** - Added mock from pip and donate links.
 * **19.12.19:** - Rebasing to alpine 3.11.
