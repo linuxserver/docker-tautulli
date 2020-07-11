@@ -53,6 +53,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "11.07.20:", desc: "Add py3-openssl." }
   - { date: "01.06.20:", desc: "Rebasing to alpine 3.12." }
   - { date: "31.05.20:", desc: "Rework to python3." }
   - { date: "12.04.20:", desc: "Added mock from pip and donate links." }
