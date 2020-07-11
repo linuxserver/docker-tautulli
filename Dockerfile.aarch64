@@ -22,6 +22,7 @@ RUN \
  echo "**** install packages ****" && \
  apk add --no-cache \
 	jq \
+	py3-openssl \
 	py3-setuptools \
 	python3 && \
  echo "**** install pip packages ****" && \
