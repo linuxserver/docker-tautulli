@@ -40,7 +40,7 @@ py3-packaging-20.4-r0
 py3-parsing-2.4.7-r0
 py3-setuptools-47.0.0-r0
 py3-six-1.15.0-r0
-python3-3.8.3-r0
+python3-3.8.4-r0
 readline-8.0.4-r0
 scanelf-1.2.6-r0
 shadow-4.8.1-r0
