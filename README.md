@@ -117,7 +117,6 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Europe/London` | Specify a timezone to use EG Europe/London. |
 | `-v /config` | Contains tautulli config and database. |
-| `-v /logs` | Map this to Plex log directory - recommended RO. |
 
 ## Environment variables from files (Docker secrets)
 
@@ -154,7 +153,7 @@ In this instance `PUID=1000` and `PGID=1000`, to find yours use `id user` as bel
 ## Application Setup
 
 Access the webui at `<your-ip>:8181`, for more information check out [Tautulli](http://tautulli.com).
-To use the build-in Plex LogViewer you have to add a volume, preferably ReadOnly. Then inn tautulli gui settings, under `Plex Media Server`, turn on `Show Advanced` and set the `Logs Folder` to the folder you mapped.
+To use the build-in Plex LogViewer you have to add a volume, preferably ReadOnly. Then in tautulli gui settings, under `Plex Media Server`, turn on `Show Advanced` and set the `Logs Folder` to the folder you mapped.
 
 
 ## Docker Mods
