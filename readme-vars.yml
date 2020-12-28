@@ -1,5 +1,4 @@
 ---
-
 # project information
 project_name: tautulli
 project_url: "http://tautulli.com"
@@ -30,7 +29,6 @@ param_env_vars:
 param_usage_include_vols: true
 param_volumes:
   - { vol_path: "/config", vol_host_path: "<path to data>", desc: "Contains tautulli config and database." }
-  - { vol_path: "/logs", vol_host_path: "<path to plex logs>", desc: "Map this to Plex log directory - recommended RO." }
 param_usage_include_ports: true
 param_ports:
   - { external_port: "8181", internal_port: "8181", port_desc: "WebUI" }
@@ -49,7 +47,7 @@ optional_block_1: false
 app_setup_block_enabled: true
 app_setup_block: |
   Access the webui at `<your-ip>:8181`, for more information check out [{{ project_name|capitalize }}]({{ project_url }}).
-  In tautulli gui settings, under `Plex Media Server`, turn on `Show Advanced` and set the `Logs Folder` to `/logs`
+  To use the build-in Plex LogViewer you have to add a volume, preferably ReadOnly. Then in tautulli gui settings, under `Plex Media Server`, turn on `Show Advanced` and set the `Logs Folder` to the folder you mapped.
 
 # changelog
 changelogs:
