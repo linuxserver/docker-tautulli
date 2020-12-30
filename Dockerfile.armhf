@@ -13,7 +13,6 @@ ENV TAUTULLI_DOCKER=True
 RUN \
  echo "**** install build packages ****" && \
  apk add --no-cache --virtual=build-dependencies \
-	curl \
 	g++ \
 	gcc \
 	make \
@@ -21,6 +20,7 @@ RUN \
 	python3-dev && \
  echo "**** install packages ****" && \
  apk add --no-cache \
+	curl \
 	jq \
 	py3-openssl \
 	py3-setuptools \
