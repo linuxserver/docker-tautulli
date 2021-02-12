@@ -9,7 +9,7 @@ ca-certificates-bundle-20191127-r5
 coreutils-8.32-r2
 expat-2.2.10-r1
 gdbm-1.19-r0
-git-2.30.0-r0
+git-2.30.1-r0
 libacl-2.2.53-r0
 libattr-2.4.48-r0
 libbz2-1.0.8-r1
@@ -33,7 +33,7 @@ py3-appdirs-1.4.4-r1
 py3-asn1crypto-1.4.0-r0
 py3-cffi-1.14.4-r0
 py3-cparser-2.20-r0
-py3-cryptography-3.3.1-r0
+py3-cryptography-3.3.2-r0
 py3-idna-3.1-r0
 py3-openssl-20.0.1-r0
 py3-ordered-set-4.0.2-r0
