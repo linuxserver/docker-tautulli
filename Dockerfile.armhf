@@ -19,6 +19,7 @@ RUN \
 	python3-dev && \
  echo "**** install packages ****" && \
  apk add --no-cache \
+	curl \
 	git \
 	py3-openssl \
 	py3-setuptools \
