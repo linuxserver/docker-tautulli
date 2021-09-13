@@ -1,6 +1,11 @@
 #!/usr/bin/with-contenv bash
 
+if [ -d /app/tautulli-tmp ]; then
+    echo "New container detected. Setting up app folder and fixing permissions."
+    mv /app/tautulli-tmp /app/tautulli
+    chown -R abc:abc /app
+fi
+
 # permissions
 chown -R abc:abc \
-	/app \
 	/config
