@@ -231,6 +231,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **10.01.22:** - Rebase to Alpine 3.15.
 * **11.07.21:** - Add curl package.
 * **23.01.21:** - Rebasing to alpine 3.13.
 * **11.07.20:** - Add py3-openssl.
