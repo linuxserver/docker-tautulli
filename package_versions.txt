@@ -10,7 +10,7 @@ coreutils-9.0-r2
 curl-7.80.0-r0
 expat-2.4.7-r0
 gdbm-1.22-r0
-git-2.34.1-r0
+git-2.34.2-r0
 libacl-2.2.53-r0
 libattr-2.5.1-r1
 libbz2-1.0.8-r1
