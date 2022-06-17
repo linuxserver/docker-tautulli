@@ -31,7 +31,7 @@ musl-utils-1.2.2-r7
 ncurses-libs-6.3_p20211120-r0
 ncurses-terminfo-base-6.3_p20211120-r0
 nghttp2-libs-1.46.0-r0
-pcre2-10.39-r0
+pcre2-10.40-r0
 procps-3.3.17-r0
 py3-appdirs-1.4.4-r2
 py3-asn1crypto-1.4.0-r1
