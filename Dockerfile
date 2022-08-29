@@ -15,18 +15,18 @@ RUN \
     g++ \
     gcc \
     make \
-    py3-pip \
     python3-dev && \
   echo "**** install packages ****" && \
   apk add --no-cache \
     curl \
     git \
     py3-openssl \
+    py3-pip \
     py3-setuptools \
     python3 && \
   echo "**** install pip packages ****" && \
-  python3 -m pip install --upgrade pip && \
-  pip3 install --no-cache-dir -U \
+  python3 -m pip install --upgrade pip wheel && \
+  pip install --no-cache-dir -U \
     mock \
     plexapi \
     pycryptodomex && \
