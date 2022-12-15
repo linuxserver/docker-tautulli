@@ -24,17 +24,17 @@ RUN \
   apk add --no-cache \
     git \
     python3 && \
- echo "**** install tautulli ****" && \
+  echo "**** install tautulli ****" && \
   if [ -z ${TAUTULLI_RELEASE+x} ]; then \
     TAUTULLI_RELEASE=$(curl -sX GET "https://api.github.com/repos/Tautulli/Tautulli/releases/latest" \
     | jq -r '. | .tag_name'); \
   fi && \
   mkdir -p /app/tautulli && \
   curl -o \
-  /tmp/tautulli.tar.gz -L \
+    /tmp/tautulli.tar.gz -L \
     "https://github.com/Tautulli/Tautulli/archive/${TAUTULLI_RELEASE}.tar.gz" && \
   tar xf \
-  /tmp/tautulli.tar.gz -C \
+    /tmp/tautulli.tar.gz -C \
     /app/tautulli --strip-components=1 && \
   cd /app/tautulli && \
   python3 -m ensurepip && \
