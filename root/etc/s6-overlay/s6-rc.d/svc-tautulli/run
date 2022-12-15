@@ -2,5 +2,5 @@
 # shellcheck shell=bash
 
 exec \
-    s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z 127.0.0.1 8181" \
+    s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z localhost 8181" \
         s6-setuidgid abc python3 /app/tautulli/Tautulli.py --datadir /config
