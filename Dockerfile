@@ -22,6 +22,7 @@ RUN \
     python3-dev && \
   echo "**** install packages ****" && \
   apk add --no-cache \
+    git \
     python3 && \
  echo "**** install tautulli ****" && \
   if [ -z ${TAUTULLI_RELEASE+x} ]; then \
