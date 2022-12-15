@@ -15,10 +15,8 @@ ENV TAUTULLI_DOCKER=True
 RUN \
   echo "**** install build packages ****" && \
   apk add --no-cache --virtual=build-dependencies \
+    build-base \
     cargo \
-    g++ \
-    gcc \
-    make \
     python3-dev && \
   echo "**** install packages ****" && \
   apk add --no-cache \
