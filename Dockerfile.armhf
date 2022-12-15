@@ -1,4 +1,6 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:arm32v7-3.16
+# syntax=docker/dockerfile:1
+
+FROM ghcr.io/linuxserver/baseimage-alpine:arm32v7-3.17
 
 # set version label
 ARG BUILD_DATE
@@ -19,15 +21,13 @@ RUN \
     python3-dev && \
   echo "**** install packages ****" && \
   apk add --no-cache \
-    curl \
-    jq \
     py3-openssl \
     py3-pip \
     py3-setuptools \
     python3 && \
  echo "**** install pip packages ****" && \
   python3 -m pip install --upgrade pip wheel && \
-  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.16/ \
+  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.17/ \
     mock \
     plexapi \
     pycryptodomex && \
