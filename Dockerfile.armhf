@@ -15,34 +15,36 @@ ENV TAUTULLI_DOCKER=True
 RUN \
   echo "**** install build packages ****" && \
   apk add --no-cache --virtual=build-dependencies \
+    cargo \
     g++ \
     gcc \
     make \
     python3-dev && \
   echo "**** install packages ****" && \
   apk add --no-cache \
-    py3-openssl \
-    py3-pip \
-    py3-setuptools \
     python3 && \
- echo "**** install pip packages ****" && \
-  python3 -m pip install --upgrade pip wheel && \
-  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.17/ \
-    mock \
-    plexapi \
-    pycryptodomex && \
-  echo "**** install app ****" && \
-  mkdir -p /app/tautulli && \
+ echo "**** install tautulli ****" && \
   if [ -z ${TAUTULLI_RELEASE+x} ]; then \
     TAUTULLI_RELEASE=$(curl -sX GET "https://api.github.com/repos/Tautulli/Tautulli/releases/latest" \
     | jq -r '. | .tag_name'); \
   fi && \
+  mkdir -p /app/tautulli && \
   curl -o \
   /tmp/tautulli.tar.gz -L \
     "https://github.com/Tautulli/Tautulli/archive/${TAUTULLI_RELEASE}.tar.gz" && \
   tar xf \
   /tmp/tautulli.tar.gz -C \
     /app/tautulli --strip-components=1 && \
+  cd /app/tautulli && \
+  python3 -m ensurepip && \
+  pip3 install -U --no-cache-dir \
+    pip \
+    wheel && \
+  pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.17/ \
+    cryptography \
+    pycryptodomex \
+    pyopenssl && \
+  pip3 install -U --no-cache-dir -r requirements.txt && \
   echo "**** Hard Coding versioning ****" && \
   echo "${TAUTULLI_RELEASE}" > /app/tautulli/version.txt && \
   echo "master" > /app/tautulli/branch.txt && \
@@ -50,12 +52,13 @@ RUN \
   apk del --purge \
     build-dependencies && \
   rm -rf \
-    /root/.cache \
-    /tmp/*
+    /tmp/* \
+    $HOME/.cache \
+    $HOME/.cargo
 
 # add local files
 COPY root/ /
 
-# ports and volumes
-VOLUME /config
+# ports and volumes
 EXPOSE 8181
+VOLUME /config
