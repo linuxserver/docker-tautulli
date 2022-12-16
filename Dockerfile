@@ -45,7 +45,7 @@ RUN \
     cryptography \
     pycryptodomex \
     pyopenssl && \
-  pip3 install -U --no-cache-dir -r requirements.txt && \
+  pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.17/ -r requirements.txt && \
   echo "**** Hard Coding versioning ****" && \
   echo "${TAUTULLI_COMMIT}" > /app/tautulli/version.txt && \
   echo "nightly" > /app/tautulli/branch.txt && \
