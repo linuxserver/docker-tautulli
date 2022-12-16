@@ -36,14 +36,12 @@ RUN \
     /app/tautulli --strip-components=1 && \
   cd /app/tautulli && \
   python3 -m ensurepip && \
-  pip3 install -U --no-cache-dir \
-    pip \
-    wheel && \
-  pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.17/ \
+  pip3 install -U --no-cache-dir pip wheel && \
+  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.17/ \
     cryptography \
     pycryptodomex \
     pyopenssl && \
-  pip3 install -U --no-cache-dir -r requirements.txt && \
+  pip install -U --no-cache-dir -r requirements.txt && \
   echo "**** Hard Coding versioning ****" && \
   echo "${TAUTULLI_RELEASE}" > /app/tautulli/version.txt && \
   echo "master" > /app/tautulli/branch.txt && \
