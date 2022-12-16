@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bash
+# shellcheck shell=bash
 
 # permissions
-chown -R abc:abc \
-    /app \
+lsiown -R abc:abc \
     /config

@@ -1,8 +1,11 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.16
+# syntax=docker/dockerfile:1
+
+FROM ghcr.io/linuxserver/baseimage-alpine:3.17
 
 # set version label
 ARG BUILD_DATE
 ARG VERSION
+ARG TAUTULLI_COMMIT
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="nemchik,thelamer"
 
@@ -12,42 +15,51 @@ ENV TAUTULLI_DOCKER=True
 RUN \
   echo "**** install build packages ****" && \
   apk add --no-cache --virtual=build-dependencies \
-    g++ \
-    gcc \
-    make \
+    build-base \
+    cargo \
     python3-dev && \
   echo "**** install packages ****" && \
   apk add --no-cache \
-    curl \
     git \
-    py3-openssl \
-    py3-pip \
-    py3-setuptools \
     python3 && \
-  echo "**** install pip packages ****" && \
-  python3 -m pip install --upgrade pip wheel && \
-  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.16/ \
-    mock \
-    plexapi \
-    pycryptodomex && \
-  echo "**** install app ****" && \
+  echo "**** install tautulli ****" && \
+  if [ -z ${TAUTULLI_COMMIT+x} ]; then \
+    TAUTULLI_COMMIT=$(curl -s https://api.github.com/repos/Tautulli/Tautulli/commits/nightly \
+      | jq -r '. | .sha' \
+      | cut -c1-8); \
+  fi && \
   mkdir -p /app/tautulli && \
-  git clone https://github.com/Tautulli/Tautulli.git /app/tautulli && \
+  curl -o \
+    /tmp/tautulli.tar.gz -L \
+    "https://github.com/Tautulli/Tautulli/archive/${TAUTULLI_COMMIT}.tar.gz" && \
+  tar xf \
+    /tmp/tautulli.tar.gz -C \
+    /app/tautulli --strip-components=1 && \
   cd /app/tautulli && \
-  git checkout nightly && \
+  sed -i 's/^backports.zoneinfo==0.2.1$/backports.zoneinfo==0.2.1;python_version<"3.9"/' requirements.txt && \
+  python3 -m ensurepip && \
+  pip3 install -U --no-cache-dir \
+    pip \
+    wheel && \
+  pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.17/ \
+    cryptography \
+    pycryptodomex \
+    pyopenssl && \
+  pip3 install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.17/ -r requirements.txt && \
   echo "**** Hard Coding versioning ****" && \
-  echo "${VERSION}" > /app/tautulli/version.txt && \
+  echo "${TAUTULLI_COMMIT}" > /app/tautulli/version.txt && \
   echo "nightly" > /app/tautulli/branch.txt && \
   echo "**** cleanup ****" && \
   apk del --purge \
     build-dependencies && \
   rm -rf \
-    /root/.cache \
-    /tmp/*
+    /tmp/* \
+    $HOME/.cache \
+    $HOME/.cargo
 
 # add local files
 COPY root/ /
 
-# ports and volumes
-VOLUME /config
+# ports and volumes
 EXPOSE 8181
+VOLUME /config
