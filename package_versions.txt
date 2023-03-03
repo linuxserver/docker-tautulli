@@ -1,5 +1,5 @@
 NAME                           VERSION                TYPE   
-APScheduler                    3.10.0                 python  
+APScheduler                    3.10.1                 python  
 CherryPy                       18.8.0                 python  
 IPy                            1.1                    python  
 Mako                           1.2.4                  python  
@@ -39,7 +39,7 @@ facebook-sdk                   3.1.0                  python
 future                         0.18.3                 python  
 ga4mp                          2.0.4                  python  
 gdbm                           1.23-r0                apk     
-git                            2.38.4-r0              apk     
+git                            2.38.4-r1              apk     
 gntp                           1.0.3                  python  
 html5lib                       1.1                    python  
 httpagentparser                1.9.5                  python  
@@ -108,7 +108,7 @@ shadow                         4.13-r0                apk
 simplejson                     3.18.3                 python  
 six                            1.16.0                 python  
 skalibs                        2.12.0.1-r0            apk     
-soupsieve                      2.3.2.post1            python  
+soupsieve                      2.4                    python  
 sqlite-libs                    3.40.1-r0              apk     
 ssl_client                     1.35.0-r29             apk     
 tempora                        5.2.1                  python  
