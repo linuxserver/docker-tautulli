@@ -27,7 +27,7 @@ ca-certificates                20220614-r4            apk
 ca-certificates-bundle         20220614-r4            apk     
 certifi                        2022.12.7              python  
 cffi                           1.15.1                 python  
-charset-normalizer             3.0.1                  python  
+charset-normalizer             3.1.0                  python  
 cheroot                        9.0.0                  python  
 cloudinary                     1.32.0                 python  
 coreutils                      9.1-r0                 apk     
