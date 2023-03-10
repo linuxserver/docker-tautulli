@@ -38,7 +38,7 @@ dnspython                      2.2.1                  python
 facebook-sdk                   3.1.0                  python  
 future                         0.18.2                 python  
 gdbm                           1.23-r0                apk     
-git                            2.38.4-r0              apk     
+git                            2.38.4-r1              apk     
 gntp                           1.0.3                  python  
 html5lib                       1.1                    python  
 httpagentparser                1.9.5                  python  
@@ -90,7 +90,7 @@ profilehooks                   1.12.0                 python
 pyOpenSSL                      23.0.0                 python  
 pycparser                      2.21                   python  
 pycryptodomex                  3.17                   python  
-pydantic                       1.10.5                 python  
+pydantic                       1.10.6                 python  
 pyparsing                      3.0.9                  python  
 python                         3.10.10                binary  
 python-dateutil                2.8.2                  python  
