@@ -4,7 +4,7 @@ CherryPy                       18.8.0                 python
 IPy                            1.1                    python  
 Mako                           1.2.4                  python  
 MarkupSafe                     2.1.2                  python  
-PlexAPI                        4.13.2                 python  
+PlexAPI                        4.13.4                 python  
 PyJWT                          2.6.0                  python  
 alpine-baselayout              3.4.0-r0               apk     
 alpine-baselayout-data         3.4.0-r0               apk     
