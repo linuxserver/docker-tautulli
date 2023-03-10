@@ -91,7 +91,7 @@ profilehooks                   1.12.0                 python
 pyOpenSSL                      23.0.0                 python  
 pycparser                      2.21                   python  
 pycryptodomex                  3.17                   python  
-pydantic                       1.10.5                 python  
+pydantic                       1.10.6                 python  
 pyparsing                      3.0.9                  python  
 python                         3.10.10                binary  
 python-dateutil                2.8.2                  python  
