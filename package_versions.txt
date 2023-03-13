@@ -117,7 +117,7 @@ typing_extensions              4.5.0                  python
 tzdata                         2022.7                 python  
 tzdata                         2022f-r1               apk     
 tzlocal                        4.2                    python  
-urllib3                        1.26.14                python  
+urllib3                        1.26.15                python  
 utmps-libs                     0.1.2.0-r1             apk     
 webencodings                   0.5.1                  python  
 websocket-client               1.5.1                  python  
