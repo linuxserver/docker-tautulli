@@ -121,7 +121,7 @@ urllib3                        1.26.15                python
 utmps-libs                     0.1.2.0-r1             apk     
 webencodings                   0.5.1                  python  
 websocket-client               1.5.1                  python  
-wheel                          0.38.4                 python  
+wheel                          0.40.0                 python  
 xmltodict                      0.13.0                 python  
 xz                             5.2.9-r0               apk     
 xz-libs                        5.2.9-r0               apk     
