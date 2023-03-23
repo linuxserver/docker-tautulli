@@ -32,7 +32,7 @@ cheroot                        9.0.0                  python
 cloudinary                     1.32.0                 python  
 coreutils                      9.1-r0                 apk     
 cryptography                   39.0.2                 python  
-curl                           7.88.1-r0              apk     
+curl                           7.88.1-r1              apk     
 distro                         1.8.0                  python  
 dnspython                      2.3.0                  python  
 facebook-sdk                   3.1.0                  python  
@@ -49,7 +49,7 @@ importlib-resources            5.12.0                 python
 inflect                        6.0.2                  python  
 ipwhois                        1.2.0                  python  
 jaraco.classes                 3.2.3                  python  
-jaraco.collections             3.8.0                  python  
+jaraco.collections             3.9.0                  python  
 jaraco.context                 4.3.0                  python  
 jaraco.functools               3.6.0                  python  
 jaraco.text                    3.11.1                 python  
@@ -60,7 +60,7 @@ libbsd                         0.11.7-r0              apk
 libbz2                         1.0.8-r4               apk     
 libc-utils                     0.7.2-r3               apk     
 libcrypto3                     3.0.8-r0               apk     
-libcurl                        7.88.1-r0              apk     
+libcurl                        7.88.1-r1              apk     
 libexpat                       2.5.0-r0               apk     
 libffi                         3.4.4-r0               apk     
 libgcc                         12.2.1_git20220924-r4  apk     
@@ -91,7 +91,7 @@ profilehooks                   1.12.0                 python
 pyOpenSSL                      23.0.0                 python  
 pycparser                      2.21                   python  
 pycryptodomex                  3.17                   python  
-pydantic                       1.10.6                 python  
+pydantic                       1.10.7                 python  
 pyparsing                      3.0.9                  python  
 python                         3.10.10                binary  
 python-dateutil                2.8.2                  python  
