@@ -9,7 +9,7 @@ PyJWT                          2.6.0                  python
 alpine-baselayout              3.4.0-r0               apk     
 alpine-baselayout-data         3.4.0-r0               apk     
 alpine-keys                    2.4-r1                 apk     
-alpine-release                 3.17.2-r0              apk     
+alpine-release                 3.17.3-r0              apk     
 apk-tools                      2.12.10-r1             apk     
 appdirs                        1.4.4                  python  
 arrow                          1.2.3                  python  
@@ -46,9 +46,9 @@ httpagentparser                1.9.5                  python
 idna                           3.4                    python  
 importlib-metadata             6.0.0                  python  
 importlib-resources            5.12.0                 python  
-inflect                        6.0.2                  python  
+inflect                        6.0.4                  python  
 ipwhois                        1.2.0                  python  
-jaraco.collections             4.0.0                  python  
+jaraco.collections             4.1.0                  python  
 jaraco.context                 4.3.0                  python  
 jaraco.functools               3.6.0                  python  
 jaraco.text                    3.11.1                 python  
@@ -58,7 +58,7 @@ libattr                        2.5.1-r2               apk
 libbsd                         0.11.7-r0              apk     
 libbz2                         1.0.8-r4               apk     
 libc-utils                     0.7.2-r3               apk     
-libcrypto3                     3.0.8-r1               apk     
+libcrypto3                     3.0.8-r3               apk     
 libcurl                        7.88.1-r1              apk     
 libexpat                       2.5.0-r0               apk     
 libffi                         3.4.4-r0               apk     
@@ -66,7 +66,7 @@ libgcc                         12.2.1_git20220924-r4  apk
 libintl                        0.21.1-r1              apk     
 libmd                          1.0.4-r0               apk     
 libproc                        3.3.17-r2              apk     
-libssl3                        3.0.8-r1               apk     
+libssl3                        3.0.8-r3               apk     
 libstdc++                      12.2.1_git20220924-r4  apk     
 linux-pam                      1.5.2-r1               apk     
 more-itertools                 9.1.0                  python  
@@ -92,10 +92,10 @@ pycparser                      2.21                   python
 pycryptodomex                  3.17                   python  
 pydantic                       1.10.7                 python  
 pyparsing                      3.0.9                  python  
-python                         3.10.10                binary  
+python                         3.10.11                binary  
 python-dateutil                2.8.2                  python  
 python-twitter                 3.5                    python  
-python3                        3.10.10-r0             apk     
+python3                        3.10.11-r0             apk     
 pytz                           2022.7.1               python  
 pytz-deprecation-shim          0.1.0.post0            python  
 readline                       8.2.0-r0               apk     
@@ -114,7 +114,7 @@ tempora                        5.2.1                  python
 tokenize-rt                    5.0.0                  python  
 typing_extensions              4.5.0                  python  
 tzdata                         2022.7                 python  
-tzdata                         2023b-r1               apk     
+tzdata                         2023c-r0               apk     
 tzlocal                        4.2                    python  
 urllib3                        1.26.15                python  
 utmps-libs                     0.1.2.0-r1             apk     
