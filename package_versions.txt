@@ -32,7 +32,7 @@ cheroot                        9.0.0                  python
 cloudinary                     1.32.0                 python  
 coreutils                      9.1-r0                 apk     
 cryptography                   40.0.2                 python  
-curl                           8.0.1-r0               apk     
+curl                           8.1.0-r1               apk     
 distro                         1.8.0                  python  
 dnspython                      2.3.0                  python  
 facebook-sdk                   3.1.0                  python  
@@ -59,7 +59,7 @@ libbsd                         0.11.7-r0              apk
 libbz2                         1.0.8-r4               apk     
 libc-utils                     0.7.2-r3               apk     
 libcrypto3                     3.0.8-r4               apk     
-libcurl                        8.0.1-r0               apk     
+libcurl                        8.1.0-r1               apk     
 libexpat                       2.5.0-r0               apk     
 libffi                         3.4.4-r0               apk     
 libgcc                         12.2.1_git20220924-r4  apk     
@@ -72,8 +72,8 @@ linux-pam                      1.5.2-r1               apk
 more-itertools                 9.1.0                  python  
 mpdecimal                      2.5.1-r1               apk     
 musicbrainzngs                 0.7.1                  python  
-musl                           1.2.3-r4               apk     
-musl-utils                     1.2.3-r4               apk     
+musl                           1.2.3-r5               apk     
+musl-utils                     1.2.3-r5               apk     
 ncurses-libs                   6.3_p20221119-r0       apk     
 ncurses-terminfo-base          6.3_p20221119-r0       apk     
 netcat-openbsd                 1.130-r4               apk     
@@ -89,7 +89,7 @@ procps                         3.3.17-r2              apk
 profilehooks                   1.12.0                 python  
 pyOpenSSL                      23.1.1                 python  
 pycparser                      2.21                   python  
-pycryptodomex                  3.17                   python  
+pycryptodomex                  3.18.0                 python  
 pydantic                       1.10.7                 python  
 pyparsing                      3.0.9                  python  
 python                         3.10.11                binary  
@@ -112,7 +112,7 @@ sqlite-libs                    3.40.1-r0              apk
 ssl_client                     1.35.0-r29             apk     
 tempora                        5.2.1                  python  
 tokenize-rt                    5.0.0                  python  
-typing_extensions              4.5.0                  python  
+typing_extensions              4.6.0                  python  
 tzdata                         2022.7                 python  
 tzdata                         2023c-r0               apk     
 tzlocal                        4.2                    python  
