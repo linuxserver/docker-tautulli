@@ -90,7 +90,7 @@ profilehooks                   1.12.0                 python
 pyOpenSSL                      23.1.1                 python  
 pycparser                      2.21                   python  
 pycryptodomex                  3.18.0                 python  
-pydantic                       1.10.7                 python  
+pydantic                       1.10.8                 python  
 pyparsing                      3.0.9                  python  
 python                         3.10.11                binary  
 python-dateutil                2.8.2                  python  
@@ -112,7 +112,7 @@ sqlite-libs                    3.40.1-r0              apk
 ssl_client                     1.35.0-r29             apk     
 tempora                        5.2.1                  python  
 tokenize-rt                    5.0.0                  python  
-typing_extensions              4.6.0                  python  
+typing_extensions              4.6.2                  python  
 tzdata                         2022.7                 python  
 tzdata                         2023c-r0               apk     
 tzlocal                        4.2                    python  
