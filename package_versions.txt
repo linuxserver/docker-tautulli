@@ -96,12 +96,12 @@ pycparser                      2.21                    python
 pycryptodomex                  3.18.0                  python  
 pydantic                       1.10.9                  python  
 pyparsing                      3.0.9                   python  
-python                         3.11.3                  binary  
+python                         3.11.4                  binary  
 python-dateutil                2.8.2                   python  
 python-twitter                 3.5                     python  
-python3                        3.11.3-r11              apk     
-python3-pyc                    3.11.3-r11              apk     
-python3-pycache-pyc0           3.11.3-r11              apk     
+python3                        3.11.4-r0               apk     
+python3-pyc                    3.11.4-r0               apk     
+python3-pycache-pyc0           3.11.4-r0               apk     
 pytz                           2022.7.1                python  
 pytz-deprecation-shim          0.1.0.post0             python  
 readline                       8.2.1-r1                apk     
