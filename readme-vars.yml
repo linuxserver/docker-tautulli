@@ -50,6 +50,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "22.06.23:", desc: "Revert master branch to Alpine 3.17 due to issues with Python 3.11." }
   - { date: "25.05.23:", desc: "Rebase to Alpine 3.18, deprecate armhf." }
   - { date: "15.12.22:", desc: "Rebase master branch to Alpine 3.17." }
   - { date: "04.10.22:", desc: "Rebase master branch to Alpine 3.16, migrate to s6v3." }
