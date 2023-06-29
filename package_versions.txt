@@ -118,7 +118,7 @@ sqlite-libs                    3.41.2-r2               apk
 ssl_client                     1.36.1-r0               apk     
 tempora                        5.2.1                   python  
 tokenize-rt                    5.0.0                   python  
-typing_extensions              4.6.3                   python  
+typing_extensions              4.7.0                   python  
 tzdata                         2022.7                  python  
 tzdata                         2023c-r1                apk     
 tzlocal                        4.2                     python  
