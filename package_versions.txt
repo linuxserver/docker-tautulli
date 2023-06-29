@@ -48,9 +48,9 @@ importlib-metadata             6.0.0                  python
 importlib-resources            5.12.0                 python  
 inflect                        6.0.4                  python  
 ipwhois                        1.2.0                  python  
-jaraco.collections             4.2.0                  python  
+jaraco.collections             4.3.0                  python  
 jaraco.context                 4.3.0                  python  
-jaraco.functools               3.7.0                  python  
+jaraco.functools               3.8.0                  python  
 jaraco.text                    3.11.1                 python  
 jq                             1.6-r2                 apk     
 libacl                         2.3.1-r1               apk     
@@ -112,7 +112,7 @@ sqlite-libs                    3.40.1-r0              apk
 ssl_client                     1.35.0-r29             apk     
 tempora                        5.2.1                  python  
 tokenize-rt                    5.0.0                  python  
-typing_extensions              4.6.3                  python  
+typing_extensions              4.7.0                  python  
 tzdata                         2022.7                 python  
 tzdata                         2023c-r0               apk     
 tzlocal                        4.2                    python  
