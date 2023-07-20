@@ -59,7 +59,7 @@ libattr                        2.5.1-r4                apk
 libbsd                         0.11.7-r1               apk     
 libbz2                         1.0.8-r5                apk     
 libc-utils                     0.7.2-r5                apk     
-libcrypto3                     3.1.1-r1                apk     
+libcrypto3                     3.1.1-r2                apk     
 libcurl                        8.1.2-r0                apk     
 libexpat                       2.5.0-r1                apk     
 libffi                         3.4.4-r2                apk     
@@ -70,7 +70,7 @@ libmd                          1.0.4-r2                apk
 libncursesw                    6.4_p20230506-r0        apk     
 libpanelw                      6.4_p20230506-r0        apk     
 libproc2                       4.0.3-r1                apk     
-libssl3                        3.1.1-r1                apk     
+libssl3                        3.1.1-r2                apk     
 libstdc++                      12.2.1_git20220924-r10  apk     
 libunistring                   1.1-r1                  apk     
 linux-pam                      1.5.2-r10               apk     
@@ -87,7 +87,7 @@ oniguruma                      6.9.8-r1                apk
 packaging                      23.0                    python  
 paho-mqtt                      1.6.1                   python  
 pcre2                          10.42-r1                apk     
-pip                            23.1.2                  python  
+pip                            23.2                    python  
 portend                        3.1.0                   python  
 procps-ng                      4.0.3-r1                apk     
 profilehooks                   1.12.0                  python  
@@ -95,8 +95,8 @@ pyOpenSSL                      23.2.0                  python
 pyc                            0.1-r0                  apk     
 pycparser                      2.21                    python  
 pycryptodomex                  3.18.0                  python  
-pydantic                       2.0.2                   python  
-pydantic_core                  2.1.2                   python  
+pydantic                       2.0.3                   python  
+pydantic_core                  2.3.0                   python  
 pyparsing                      3.0.9                   python  
 python                         3.11.4                  binary  
 python-dateutil                2.8.2                   python  
