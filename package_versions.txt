@@ -6,6 +6,7 @@ Mako                           1.2.4                   python
 MarkupSafe                     2.1.2                   python  
 PlexAPI                        4.13.4                  python  
 PyJWT                          2.6.0                   python  
+Simple Launcher Executable     1.1.0.14                dotnet  
 alpine-baselayout              3.4.3-r1                apk     
 alpine-baselayout-data         3.4.3-r1                apk     
 alpine-keys                    2.4-r1                  apk     
@@ -22,8 +23,8 @@ beautifulsoup4                 4.11.2                  python
 bleach                         6.0.0                   python  
 brotli-libs                    1.0.9-r14               apk     
 busybox                        1.36.1                  binary  
-busybox                        1.36.1-r1               apk     
-busybox-binsh                  1.36.1-r1               apk     
+busybox                        1.36.1-r2               apk     
+busybox-binsh                  1.36.1-r2               apk     
 ca-certificates                20230506-r0             apk     
 ca-certificates-bundle         20230506-r0             apk     
 certifi                        2022.12.7               python  
@@ -32,8 +33,8 @@ charset-normalizer             3.2.0                   python
 cheroot                        9.0.0                   python  
 cloudinary                     1.32.0                  python  
 coreutils                      9.3-r1                  apk     
-cryptography                   41.0.2                  python  
-curl                           8.2.0-r1                apk     
+cryptography                   41.0.3                  python  
+curl                           8.2.1-r0                apk     
 distro                         1.8.0                   python  
 dnspython                      2.3.0                   python  
 facebook-sdk                   3.1.0                   python  
@@ -60,7 +61,7 @@ libbsd                         0.11.7-r1               apk
 libbz2                         1.0.8-r5                apk     
 libc-utils                     0.7.2-r5                apk     
 libcrypto3                     3.1.1-r3                apk     
-libcurl                        8.2.0-r1                apk     
+libcurl                        8.2.1-r0                apk     
 libexpat                       2.5.0-r1                apk     
 libffi                         3.4.4-r2                apk     
 libgcc                         12.2.1_git20220924-r10  apk     
@@ -78,7 +79,7 @@ more-itertools                 10.0.0                  python
 mpdecimal                      2.5.1-r2                apk     
 musicbrainzngs                 0.7.1                   python  
 musl                           1.2.4-r1                apk     
-musl-utils                     1.2.4-r0                apk     
+musl-utils                     1.2.4-r1                apk     
 ncurses-terminfo-base          6.4_p20230506-r0        apk     
 netcat-openbsd                 1.219-r1                apk     
 nghttp2-libs                   1.55.1-r0               apk     
@@ -117,7 +118,7 @@ six                            1.16.0                  python
 skalibs                        2.13.1.1-r1             apk     
 soupsieve                      2.4                     python  
 sqlite-libs                    3.41.2-r2               apk     
-ssl_client                     1.36.1-r1               apk     
+ssl_client                     1.36.1-r2               apk     
 tempora                        5.2.1                   python  
 tokenize-rt                    5.0.0                   python  
 typing_extensions              4.7.1                   python  
