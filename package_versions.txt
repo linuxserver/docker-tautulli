@@ -6,6 +6,7 @@ Mako                           1.2.4                  python
 MarkupSafe                     2.1.2                  python  
 PlexAPI                        4.13.4                 python  
 PyJWT                          2.6.0                  python  
+Simple Launcher Executable     1.1.0.14               dotnet  
 alpine-baselayout              3.4.0-r0               apk     
 alpine-baselayout-data         3.4.0-r0               apk     
 alpine-keys                    2.4-r1                 apk     
@@ -32,8 +33,8 @@ charset-normalizer             3.2.0                  python
 cheroot                        9.0.0                  python  
 cloudinary                     1.32.0                 python  
 coreutils                      9.1-r0                 apk     
-cryptography                   41.0.2                 python  
-curl                           8.2.0-r1               apk     
+cryptography                   41.0.3                 python  
+curl                           8.2.1-r0               apk     
 distro                         1.8.0                  python  
 dnspython                      2.3.0                  python  
 facebook-sdk                   3.1.0                  python  
@@ -60,7 +61,7 @@ libbsd                         0.11.7-r0              apk
 libbz2                         1.0.8-r4               apk     
 libc-utils                     0.7.2-r3               apk     
 libcrypto3                     3.0.9-r3               apk     
-libcurl                        8.2.0-r1               apk     
+libcurl                        8.2.1-r0               apk     
 libexpat                       2.5.0-r0               apk     
 libffi                         3.4.4-r0               apk     
 libgcc                         12.2.1_git20220924-r4  apk     
@@ -70,7 +71,7 @@ libproc                        3.3.17-r2              apk
 libssl3                        3.0.9-r3               apk     
 libstdc++                      12.2.1_git20220924-r4  apk     
 linux-pam                      1.5.2-r1               apk     
-more-itertools                 10.0.0                 python  
+more-itertools                 10.1.0                 python  
 mpdecimal                      2.5.1-r1               apk     
 musicbrainzngs                 0.7.1                  python  
 musl                           1.2.3-r5               apk     
