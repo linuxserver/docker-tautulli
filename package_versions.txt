@@ -52,7 +52,7 @@ inflect                        7.0.0                  python
 ipwhois                        1.2.0                  python  
 jaraco.collections             4.3.0                  python  
 jaraco.context                 4.3.0                  python  
-jaraco.functools               3.8.0                  python  
+jaraco.functools               3.8.1                  python  
 jaraco.text                    3.11.1                 python  
 jq                             1.6-r2                 apk     
 libacl                         2.3.1-r1               apk     
@@ -60,7 +60,7 @@ libattr                        2.5.1-r2               apk
 libbsd                         0.11.7-r0              apk     
 libbz2                         1.0.8-r4               apk     
 libc-utils                     0.7.2-r3               apk     
-libcrypto3                     3.0.9-r3               apk     
+libcrypto3                     3.0.10-r0              apk     
 libcurl                        8.2.1-r0               apk     
 libexpat                       2.5.0-r0               apk     
 libffi                         3.4.4-r0               apk     
@@ -68,7 +68,7 @@ libgcc                         12.2.1_git20220924-r4  apk
 libintl                        0.21.1-r1              apk     
 libmd                          1.0.4-r0               apk     
 libproc                        3.3.17-r2              apk     
-libssl3                        3.0.9-r3               apk     
+libssl3                        3.0.10-r0              apk     
 libstdc++                      12.2.1_git20220924-r4  apk     
 linux-pam                      1.5.2-r1               apk     
 more-itertools                 10.1.0                 python  
@@ -123,7 +123,7 @@ urllib3                        1.26.15                python
 utmps-libs                     0.1.2.0-r1             apk     
 webencodings                   0.5.1                  python  
 websocket-client               1.5.1                  python  
-wheel                          0.41.0                 python  
+wheel                          0.41.1                 python  
 xmltodict                      0.13.0                 python  
 xz                             5.2.9-r0               apk     
 xz-libs                        5.2.9-r0               apk     
