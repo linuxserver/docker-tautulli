@@ -95,10 +95,9 @@ pyOpenSSL                      23.2.0                  python
 pyc                            0.1-r0                  apk     
 pycparser                      2.21                    python  
 pycryptodomex                  3.18.0                  python  
-pydantic                       2.1.1                   python  
-pydantic_core                  2.4.0                   python  
+pydantic                       2.2.0                   python  
+pydantic_core                  2.6.0                   python  
 pyparsing                      3.0.9                   python  
-python                         3.11.4                  binary  
 python-dateutil                2.8.2                   python  
 python-twitter                 3.5                     python  
 python3                        3.11.4-r0               apk     
