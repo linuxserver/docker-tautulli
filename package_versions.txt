@@ -10,7 +10,7 @@ Simple Launcher Executable     1.1.0.14               dotnet
 alpine-baselayout              3.4.0-r0               apk     
 alpine-baselayout-data         3.4.0-r0               apk     
 alpine-keys                    2.4-r1                 apk     
-alpine-release                 3.17.4-r0              apk     
+alpine-release                 3.17.5-r0              apk     
 annotated-types                0.5.0                  python  
 apk-tools                      2.12.10-r1             apk     
 appdirs                        1.4.4                  python  
@@ -22,7 +22,6 @@ bash                           5.2.15-r0              apk
 beautifulsoup4                 4.11.2                 python  
 bleach                         6.0.0                  python  
 brotli-libs                    1.0.9-r9               apk     
-busybox                        1.35.0                 binary  
 busybox                        1.35.0-r29             apk     
 busybox-binsh                  1.35.0-r29             apk     
 ca-certificates                20230506-r0            apk     
@@ -92,10 +91,9 @@ profilehooks                   1.12.0                 python
 pyOpenSSL                      23.2.0                 python  
 pycparser                      2.21                   python  
 pycryptodomex                  3.18.0                 python  
-pydantic                       2.1.1                  python  
-pydantic_core                  2.4.0                  python  
+pydantic                       2.2.0                  python  
+pydantic_core                  2.6.0                  python  
 pyparsing                      3.0.9                  python  
-python                         3.10.12                binary  
 python-dateutil                2.8.2                  python  
 python-twitter                 3.5                    python  
 python3                        3.10.12-r0             apk     
