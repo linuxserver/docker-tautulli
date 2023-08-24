@@ -45,8 +45,6 @@ gntp                           1.0.3                   python
 html5lib                       1.1                     python  
 httpagentparser                1.9.5                   python  
 idna                           3.4                     python  
-importlib-metadata             6.8.0                   python  
-importlib-resources            6.0.1                   python  
 inflect                        7.0.0                   python  
 ipwhois                        1.2.0                   python  
 jaraco.collections             4.3.0                   python  
