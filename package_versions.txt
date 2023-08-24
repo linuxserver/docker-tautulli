@@ -91,8 +91,8 @@ profilehooks                   1.12.0                 python
 pyOpenSSL                      23.2.0                 python  
 pycparser                      2.21                   python  
 pycryptodomex                  3.18.0                 python  
-pydantic                       2.2.0                  python  
-pydantic_core                  2.6.0                  python  
+pydantic                       2.3.0                  python  
+pydantic_core                  2.6.3                  python  
 pyparsing                      3.0.9                  python  
 python-dateutil                2.8.2                  python  
 python-twitter                 3.5                    python  
@@ -121,7 +121,7 @@ urllib3                        1.26.15                python
 utmps-libs                     0.1.2.0-r1             apk     
 webencodings                   0.5.1                  python  
 websocket-client               1.5.1                  python  
-wheel                          0.41.1                 python  
+wheel                          0.41.2                 python  
 xmltodict                      0.13.0                 python  
 xz                             5.2.9-r0               apk     
 xz-libs                        5.2.9-r0               apk     
