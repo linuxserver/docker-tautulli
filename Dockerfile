@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/linuxserver/baseimage-alpine:3.17
+FROM ghcr.io/linuxserver/baseimage-alpine:3.18
 
 # set version label
 ARG BUILD_DATE
@@ -35,16 +35,15 @@ RUN \
     /tmp/tautulli.tar.gz -C \
     /app/tautulli --strip-components=1 && \
   cd /app/tautulli && \
-  sed -i 's/^backports.zoneinfo==0.2.1$/backports.zoneinfo==0.2.1;python_version<"3.9"/' requirements.txt && \
   python3 -m venv /lsiopy && \
   pip install -U --no-cache-dir \
     pip \
     wheel && \
-  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.17/ \
+  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.18/ \
     cryptography \
     pycryptodomex \
     pyopenssl && \
-  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.17/ \
+  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.18/ \
     -r requirements.txt && \
   echo "**** Hard Coding versioning ****" && \
   echo "${TAUTULLI_RELEASE}" > /app/tautulli/version.txt && \
