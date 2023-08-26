@@ -40,11 +40,11 @@ RUN \
   pip install -U --no-cache-dir \
     pip \
     wheel && \
-  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.17/ \
+  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.18/ \
     cryptography \
     pycryptodomex \
     pyopenssl && \
-  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.17/ \
+  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.18/ \
     -r requirements.txt && \
   echo "**** Hard Coding versioning ****" && \
   echo "${TAUTULLI_RELEASE}" > /app/tautulli/version.txt && \
