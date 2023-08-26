@@ -231,6 +231,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **26.08.23:** - Rebase to Alpine 3.18.
 * **22.06.23:** - Revert master branch to Alpine 3.17 due to issues with Python 3.11.
 * **25.05.23:** - Rebase to Alpine 3.18, deprecate armhf.
 * **15.12.22:** - Rebase master branch to Alpine 3.17.
