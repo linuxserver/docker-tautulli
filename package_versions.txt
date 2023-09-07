@@ -69,7 +69,7 @@ libintl                        0.21.1-r7               apk
 libmd                          1.0.4-r2                apk     
 libncursesw                    6.4_p20230506-r0        apk     
 libpanelw                      6.4_p20230506-r0        apk     
-libproc2                       4.0.3-r1                apk     
+libproc2                       4.0.4-r0                apk     
 libssl3                        3.1.2-r0                apk     
 libstdc++                      12.2.1_git20220924-r10  apk     
 libunistring                   1.1-r1                  apk     
@@ -89,7 +89,7 @@ paho-mqtt                      1.6.1                   python
 pcre2                          10.42-r1                apk     
 pip                            23.2.1                  python  
 portend                        3.2.0                   python  
-procps-ng                      4.0.3-r1                apk     
+procps-ng                      4.0.4-r0                apk     
 profilehooks                   1.12.0                  python  
 pyOpenSSL                      23.2.0                  python  
 pyc                            0.1-r0                  apk     
@@ -113,7 +113,7 @@ shadow                         4.13-r4                 apk
 simplejson                     3.19.1                  python  
 six                            1.16.0                  python  
 skalibs                        2.13.1.1-r1             apk     
-soupsieve                      2.4.1                   python  
+soupsieve                      2.5                     python  
 sqlite-libs                    3.41.2-r2               apk     
 ssl_client                     1.36.1-r2               apk     
 tempora                        5.5.0                   python  
