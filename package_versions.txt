@@ -4,7 +4,7 @@ CherryPy                       18.8.0                  python
 IPy                            1.1                     python  
 Mako                           1.2.4                   python  
 MarkupSafe                     2.1.3                   python  
-PlexAPI                        4.15.0                  python  
+PlexAPI                        4.15.4                  python  
 PyJWT                          2.8.0                   python  
 Simple Launcher Executable     1.1.0.14                dotnet  
 alpine-baselayout              3.4.3-r1                apk     
