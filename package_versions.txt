@@ -10,10 +10,9 @@ SimpleLauncherExecutable       1.1.0.14                dotnet
 alpine-baselayout              3.4.3-r1                apk     
 alpine-baselayout-data         3.4.3-r1                apk     
 alpine-keys                    2.4-r1                  apk     
-alpine-release                 3.18.4-r0               apk     
+alpine-release                 3.18.5-r0               apk     
 annotated-types                0.6.0                   python  
 apk-tools                      2.14.0-r2               apk     
-appdirs                        1.4.4                   python  
 arrow                          1.2.3                   python  
 autocommand                    2.2.2                   python  
 backports.csv                  1.0.7                   python  
@@ -88,6 +87,7 @@ packaging                      23.1                    python
 paho-mqtt                      1.6.1                   python  
 pcre2                          10.42-r1                apk     
 pip                            23.3.1                  python  
+platformdirs                   3.11.0                  python  
 portend                        3.2.0                   python  
 procps-ng                      4.0.4-r0                apk     
 profilehooks                   1.12.0                  python  
