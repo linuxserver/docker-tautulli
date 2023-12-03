@@ -10,7 +10,7 @@ SimpleLauncherExecutable       1.1.0.14                dotnet
 alpine-baselayout              3.4.3-r1                apk     
 alpine-baselayout-data         3.4.3-r1                apk     
 alpine-keys                    2.4-r1                  apk     
-alpine-release                 3.18.4-r0               apk     
+alpine-release                 3.18.5-r0               apk     
 annotated-types                0.6.0                   python  
 apk-tools                      2.14.0-r2               apk     
 arrow                          1.2.3                   python  
