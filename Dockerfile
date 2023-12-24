@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/linuxserver/baseimage-alpine:3.18
+FROM ghcr.io/linuxserver/baseimage-alpine:3.19
 
 # set version label
 ARG BUILD_DATE
@@ -41,11 +41,11 @@ RUN \
   pip install -U --no-cache-dir \
     pip \
     wheel && \
-  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.18/ \
+  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.19/ \
     cryptography \
     pycryptodomex \
     pyopenssl && \
-  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.18/ \
+  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.19/ \
     -r requirements.txt && \
   echo "**** Hard Coding versioning ****" && \
   echo "${TAUTULLI_COMMIT}" > /app/tautulli/version.txt && \
