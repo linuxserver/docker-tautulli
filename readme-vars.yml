@@ -28,7 +28,7 @@ param_env_vars:
   - { env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London." }
 param_usage_include_vols: true
 param_volumes:
-  - { vol_path: "/config", vol_host_path: "<path to data>", desc: "Contains tautulli config and database." }
+  - { vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/config", desc: "Persistent config files" }
 param_usage_include_ports: true
 param_ports:
   - { external_port: "8181", internal_port: "8181", port_desc: "WebUI" }
@@ -51,6 +51,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "23.12.23:", desc: "Rebase to Alpine 3.19."}
   - { date: "25.05.23:", desc: "Rebase to Alpine 3.18, deprecate armhf." }
   - { date: "15.12.22:", desc: "Rebase develop branch to Alpine 3.17." }
   - { date: "04.10.22:", desc: "Rebase develop branch to Alpine 3.16, migrate to s6v3." }
