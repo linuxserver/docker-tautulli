@@ -124,7 +124,7 @@ tempora                        5.5.0                  python
 tokenize-rt                    5.2.0                  python  
 typing_extensions              4.9.0                  python  
 tzdata                         2023.3                 python  
-tzdata                         2023c-r1               apk     
+tzdata                         2023d-r0               apk     
 tzlocal                        5.0.1                  python  
 urllib3                        1.26.18                python  
 utmps-libs                     0.1.2.2-r0             apk     
