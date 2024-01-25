@@ -35,7 +35,7 @@ coreutils                      9.4-r1                 apk
 coreutils-env                  9.4-r1                 apk     
 coreutils-fmt                  9.4-r1                 apk     
 coreutils-sha512sum            9.4-r1                 apk     
-cryptography                   41.0.7                 python  
+cryptography                   42.0.1                 python  
 curl                           8.5.0-r0               apk     
 distro                         1.8.0                  python  
 dnspython                      2.4.2                  python  
@@ -62,7 +62,7 @@ libattr                        2.5.1-r5               apk
 libbsd                         0.11.7-r3              apk     
 libbz2                         1.0.8-r6               apk     
 libc-utils                     0.7.2-r5               apk     
-libcrypto3                     3.1.4-r3               apk     
+libcrypto3                     3.1.4-r4               apk     
 libcurl                        8.5.0-r0               apk     
 libexpat                       2.5.0-r2               apk     
 libffi                         3.4.4-r3               apk     
@@ -73,7 +73,7 @@ libmd                          1.1.0-r0               apk
 libncursesw                    6.4_p20231125-r0       apk     
 libpanelw                      6.4_p20231125-r0       apk     
 libproc2                       4.0.4-r0               apk     
-libssl3                        3.1.4-r3               apk     
+libssl3                        3.1.4-r4               apk     
 libstdc++                      13.2.1_git20231014-r0  apk     
 libunistring                   1.1-r2                 apk     
 linux-pam                      1.5.3-r7               apk     
@@ -95,7 +95,7 @@ platformdirs                   3.11.0                 python
 portend                        3.2.0                  python  
 procps-ng                      4.0.4-r0               apk     
 profilehooks                   1.12.0                 python  
-pyOpenSSL                      23.3.0                 python  
+pyOpenSSL                      24.0.0                 python  
 pyc                            3.11.6-r1              apk     
 pycparser                      2.21                   python  
 pycryptodomex                  3.20.0                 python  
