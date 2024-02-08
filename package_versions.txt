@@ -90,7 +90,7 @@ oniguruma                      6.9.9-r0               apk
 packaging                      23.1                   python  
 paho-mqtt                      1.6.1                  python  
 pcre2                          10.42-r2               apk     
-pip                            23.3.2                 python  
+pip                            24.0                   python  
 platformdirs                   3.11.0                 python  
 portend                        3.2.0                  python  
 procps-ng                      4.0.4-r0               apk     
@@ -99,8 +99,8 @@ pyOpenSSL                      24.0.0                 python
 pyc                            3.11.6-r1              apk     
 pycparser                      2.21                   python  
 pycryptodomex                  3.20.0                 python  
-pydantic                       2.6.0                  python  
-pydantic_core                  2.16.1                 python  
+pydantic                       2.6.1                  python  
+pydantic_core                  2.16.2                 python  
 pyparsing                      3.1.1                  python  
 python-dateutil                2.8.2                  python  
 python-twitter                 3.5                    python  
@@ -124,7 +124,7 @@ tempora                        5.5.0                  python
 tokenize-rt                    5.2.0                  python  
 typing_extensions              4.9.0                  python  
 tzdata                         2023.3                 python  
-tzdata                         2023d-r0               apk     
+tzdata                         2024a-r0               apk     
 tzlocal                        5.0.1                  python  
 urllib3                        1.26.18                python  
 utmps-libs                     0.1.2.2-r0             apk     
