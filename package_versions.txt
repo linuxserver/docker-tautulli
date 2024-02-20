@@ -35,7 +35,7 @@ coreutils                      9.4-r2                 apk
 coreutils-env                  9.4-r2                 apk     
 coreutils-fmt                  9.4-r2                 apk     
 coreutils-sha512sum            9.4-r2                 apk     
-cryptography                   42.0.2                 python  
+cryptography                   42.0.3                 python  
 curl                           8.5.0-r0               apk     
 distro                         1.8.0                  python  
 dnspython                      2.4.2                  python  
@@ -96,7 +96,7 @@ portend                        3.2.0                  python
 procps-ng                      4.0.4-r0               apk     
 profilehooks                   1.12.0                 python  
 pyOpenSSL                      24.0.0                 python  
-pyc                            3.11.6-r1              apk     
+pyc                            3.11.8-r0              apk     
 pycparser                      2.21                   python  
 pycryptodomex                  3.20.0                 python  
 pydantic                       2.6.1                  python  
@@ -104,9 +104,9 @@ pydantic_core                  2.16.2                 python
 pyparsing                      3.1.1                  python  
 python-dateutil                2.8.2                  python  
 python-twitter                 3.5                    python  
-python3                        3.11.6-r1              apk     
-python3-pyc                    3.11.6-r1              apk     
-python3-pycache-pyc0           3.11.6-r1              apk     
+python3                        3.11.8-r0              apk     
+python3-pyc                    3.11.8-r0              apk     
+python3-pycache-pyc0           3.11.8-r0              apk     
 pytz                           2023.3                 python  
 readline                       8.2.1-r2               apk     
 requests                       2.31.0                 python  
