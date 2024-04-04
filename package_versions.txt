@@ -52,7 +52,7 @@ importlib_resources            6.4.0                  python
 inflect                        7.2.0                  python                   
 ipwhois                        1.2.0                  python                   
 jaraco.collections             5.0.0                  python                   
-jaraco.context                 4.3.0                  python                   
+jaraco.context                 5.1.0                  python                   
 jaraco.functools               4.0.0                  python                   
 jaraco.text                    3.12.0                 python                   
 jq                             1.7.1-r0               apk                      
