@@ -11,7 +11,6 @@ alpine-baselayout              3.4.3-r2               apk
 alpine-baselayout-data         3.4.3-r2               apk                      
 alpine-keys                    2.4-r1                 apk                      
 alpine-release                 3.19.1-r0              apk                      
-annotated-types                0.6.0                  python                   
 apk-tools                      2.14.0-r5              apk                      
 arrow                          1.2.3                  python                   
 autocommand                    2.2.2                  python                   
@@ -23,7 +22,7 @@ bleach                         6.0.0                  python
 brotli-libs                    1.1.0-r1               apk                      
 busybox                        1.36.1-r15             apk                      
 busybox-binsh                  1.36.1-r15             apk                      
-c-ares                         1.24.0-r1              apk                      
+c-ares                         1.27.0-r0              apk                      
 ca-certificates                20240226-r0            apk                      
 ca-certificates-bundle         20240226-r0            apk                      
 certifi                        2023.7.22              python                   
@@ -50,10 +49,10 @@ httpagentparser                1.9.5                  python
 idna                           3.4                    python                   
 importlib-metadata             6.8.0                  python                   
 importlib-resources            6.0.1                  python                   
-inflect                        7.0.0                  python                   
+inflect                        7.2.0                  python                   
 ipwhois                        1.2.0                  python                   
 jaraco.collections             5.0.0                  python                   
-jaraco.context                 4.3.0                  python                   
+jaraco.context                 5.1.0                  python                   
 jaraco.functools               4.0.0                  python                   
 jaraco.text                    3.12.0                 python                   
 jq                             1.7.1-r0               apk                      
@@ -97,10 +96,8 @@ procps-ng                      4.0.4-r0               apk
 profilehooks                   1.12.0                 python                   
 pyOpenSSL                      24.1.0                 python                   
 pyc                            3.11.8-r0              apk                      
-pycparser                      2.21                   python                   
+pycparser                      2.22                   python                   
 pycryptodomex                  3.20.0                 python                   
-pydantic                       2.6.4                  python                   
-pydantic_core                  2.16.3                 python                   
 pyparsing                      3.1.1                  python                   
 python-dateutil                2.8.2                  python                   
 python-twitter                 3.5                    python                   
@@ -122,6 +119,7 @@ sqlite-libs                    3.44.2-r0              apk
 ssl_client                     1.36.1-r15             apk                      
 tempora                        5.5.0                  python                   
 tokenize-rt                    5.2.0                  python                   
+typeguard                      4.2.1                  python                   
 typing_extensions              4.10.0                 python                   
 tzdata                         2023.3                 python                   
 tzdata                         2024a-r0               apk                      
