@@ -11,11 +11,12 @@ alpine-baselayout              3.4.3-r2               apk
 alpine-baselayout-data         3.4.3-r2               apk                      
 alpine-keys                    2.4-r1                 apk                      
 alpine-release                 3.19.1-r0              apk                      
-apk-tools                      2.14.0-r5              apk                      
+apk-tools                      2.14.3-r1              apk                      
 arrow                          1.2.3                  python                   
 autocommand                    2.2.2                  python                   
 backports.csv                  1.0.7                  python                   
 backports.functools-lru-cache  1.6.6                  python                   
+backports.tarfile              1.0.0                  python                   
 bash                           5.2.21-r0              apk                      
 beautifulsoup4                 4.12.2                 python                   
 bleach                         6.0.0                  python                   
@@ -52,7 +53,7 @@ importlib-resources            6.0.1                  python
 inflect                        7.2.0                  python                   
 ipwhois                        1.2.0                  python                   
 jaraco.collections             5.0.0                  python                   
-jaraco.context                 5.1.0                  python                   
+jaraco.context                 5.3.0                  python                   
 jaraco.functools               4.0.0                  python                   
 jaraco.text                    3.12.0                 python                   
 jq                             1.7.1-r0               apk                      
@@ -120,7 +121,7 @@ ssl_client                     1.36.1-r15             apk
 tempora                        5.5.0                  python                   
 tokenize-rt                    5.2.0                  python                   
 typeguard                      4.2.1                  python                   
-typing_extensions              4.10.0                 python                   
+typing_extensions              4.11.0                 python                   
 tzdata                         2023.3                 python                   
 tzdata                         2024a-r0               apk                      
 tzlocal                        5.0.1                  python                   
