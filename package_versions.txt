@@ -16,7 +16,7 @@ arrow                          1.2.3                  python
 autocommand                    2.2.2                  python                   
 backports.csv                  1.0.7                  python                   
 backports.functools-lru-cache  1.6.6                  python                   
-backports.tarfile              1.1.0                  python                   
+backports.tarfile              1.1.1                  python                   
 bash                           5.2.21-r0              apk                      
 beautifulsoup4                 4.12.2                 python                   
 bleach                         6.0.0                  python                   
@@ -51,7 +51,7 @@ httpagentparser                1.9.5                  python
 idna                           3.4                    python                   
 importlib-metadata             6.8.0                  python                   
 importlib-resources            6.0.1                  python                   
-inflect                        7.2.0                  python                   
+inflect                        7.2.1                  python                   
 ipwhois                        1.2.0                  python                   
 jaraco.collections             5.0.1                  python                   
 jaraco.context                 5.3.0                  python                   
