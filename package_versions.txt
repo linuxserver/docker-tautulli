@@ -43,7 +43,7 @@ findutils               4.9.0-r5               apk
 future                  1.0.0                  python                   
 ga4mp                   2.0.4                  python                   
 gdbm                    1.23-r1                apk                      
-git                     2.43.0-r0              apk                      
+git                     2.43.4-r0              apk                      
 gntp                    1.0.3                  python                   
 html5lib                1.1                    python  (+2 duplicates)  
 httpagentparser         1.9.5                  python                   
