@@ -2,7 +2,7 @@ NAME                    VERSION                TYPE
 APScheduler             3.10.1                 python                   
 CherryPy                18.9.0                 python                   
 IPy                     1.1                    python                   
-Mako                    1.3.3                  python                   
+Mako                    1.3.5                  python                   
 MarkupSafe              2.1.5                  python                   
 PlexAPI                 4.15.12                python                   
 PyJWT                   2.8.0                  python                   
@@ -91,7 +91,7 @@ packaging               24.0                   python
 paho-mqtt               2.1.0                  python                   
 pcre2                   10.42-r2               apk                      
 pip                     24.0                   python                   
-platformdirs            4.2.1                  python                   
+platformdirs            4.2.2                  python                   
 portend                 3.2.0                  python                   
 procps-ng               4.0.4-r0               apk                      
 profilehooks            1.12.0                 python                   
@@ -134,5 +134,5 @@ wheel                   0.43.0                 python
 xmltodict               0.13.0                 python                   
 xz-libs                 5.4.5-r0               apk                      
 zc.lockfile             3.0.post1              python                   
-zipp                    3.18.1                 python                   
+zipp                    3.18.2                 python                   
 zlib                    1.3.1-r0               apk                      
