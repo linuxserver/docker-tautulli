@@ -36,12 +36,12 @@ RUN \
     /tmp/tautulli.tar.gz -C \
     /app/tautulli --strip-components=1 && \
   cd /app/tautulli && \
-  sed -i 's/^backports.zoneinfo==0.2.1$/backports.zoneinfo==0.2.1;python_version<"3.9"/' requirements.txt && \
   python3 -m venv /lsiopy && \
   pip install -U --no-cache-dir \
     pip \
     wheel && \
   pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.20/ \
+    apscheduler \
     cryptography \
     pycryptodomex \
     pyopenssl && \
