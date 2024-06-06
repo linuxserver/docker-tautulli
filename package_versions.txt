@@ -34,7 +34,7 @@ coreutils               9.4-r2                 apk
 coreutils-env           9.4-r2                 apk                      
 coreutils-fmt           9.4-r2                 apk                      
 coreutils-sha512sum     9.4-r2                 apk                      
-cryptography            42.0.7                 python                   
+cryptography            42.0.8                 python                   
 curl                    8.5.0-r0               apk                      
 distro                  1.9.0                  python                   
 dnspython               2.6.1                  python                   
@@ -122,7 +122,7 @@ tempora                 5.5.1                  python
 tokenize-rt             5.2.0                  python                   
 typeguard               4.3.0                  python                   
 types-python-dateutil   2.9.0.20240316         python                   
-typing_extensions       4.12.0                 python                   
+typing_extensions       4.12.1                 python                   
 tzdata                  2024.1                 python                   
 tzdata                  2024a-r0               apk                      
 tzlocal                 5.0.1                  python                   
