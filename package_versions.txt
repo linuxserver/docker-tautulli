@@ -34,7 +34,7 @@ coreutils               9.4-r2                 apk
 coreutils-env           9.4-r2                 apk                      
 coreutils-fmt           9.4-r2                 apk                      
 coreutils-sha512sum     9.4-r2                 apk                      
-cryptography            42.0.7                 python                   
+cryptography            42.0.8                 python                   
 curl                    8.5.0-r0               apk                      
 distro                  1.9.0                  python                   
 dnspython               2.6.1                  python                   
