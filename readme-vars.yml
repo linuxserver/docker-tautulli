@@ -6,7 +6,6 @@ project_url: "http://tautulli.com"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/tautulli-icon.png"
 project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) is a python based web application for monitoring, analytics and notifications for Plex Media Server."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
-project_blurb_optional_extras_enabled: false
 
 # supported architectures
 available_architectures:
@@ -22,35 +21,22 @@ development_versions_items:
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
-param_usage_include_net: false
-param_usage_include_env: true
-param_env_vars:
-  - { env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London." }
 param_usage_include_vols: true
 param_volumes:
   - { vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/config", desc: "Persistent config files" }
 param_usage_include_ports: true
 param_ports:
   - { external_port: "8181", internal_port: "8181", port_desc: "WebUI" }
-param_device_map: false
-cap_add_param: false
-
-# optional container parameters
-opt_param_usage_include_env: false
-opt_param_usage_include_vols: false
-opt_param_usage_include_ports: false
-opt_param_device_map: false
-opt_cap_add_param: false
-optional_block_1: false
 
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
   Access the webui at `<your-ip>:8181`, for more information check out [{{ project_name|capitalize }}]({{ project_url }}).
-  To use the build-in Plex LogViewer you have to add a volume, preferably ReadOnly. Then in tautulli gui settings, under `Plex Media Server`, turn on `Show Advanced` and set the `Logs Folder` to the folder you mapped.
+  To use the built-in Plex LogViewer you have to add a volume, preferably Read-Only. Then in Tautulli gui settings, under `Plex Media Server`, turn on `Show Advanced` and set the `Logs Folder` to the folder you mapped.
 
 # changelog
 changelogs:
+  - { date: "01.06.24:", desc: "Rebase to Alpine 3.20."}
   - { date: "23.12.23:", desc: "Rebase to Alpine 3.19."}
   - { date: "25.05.23:", desc: "Rebase to Alpine 3.18, deprecate armhf." }
   - { date: "15.12.22:", desc: "Rebase develop branch to Alpine 3.17." }
