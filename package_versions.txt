@@ -50,7 +50,7 @@ httpagentparser         1.9.5                  python
 idna                    3.7                    python                   
 importlib_metadata      7.1.0                  python                   
 importlib_resources     6.4.0                  python                   
-inflect                 7.2.1                  python                   
+inflect                 7.3.0                  python                   
 ipwhois                 1.2.0                  python                   
 jaraco.collections      5.0.1                  python                   
 jaraco.context          5.3.0                  python                   
@@ -90,7 +90,7 @@ oniguruma               6.9.9-r0               apk
 packaging               24.1                   python                   
 paho-mqtt               2.1.0                  python                   
 pcre2                   10.42-r2               apk                      
-pip                     24.0                   python                   
+pip                     24.1                   python                   
 platformdirs            4.2.2                  python                   
 portend                 3.2.0                  python                   
 procps-ng               4.0.4-r0               apk                      
