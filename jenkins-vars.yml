@@ -6,7 +6,6 @@ external_type: github_stable
 release_type: stable
 release_tag: latest
 ls_branch: master
-build_armhf: false
 repo_vars:
   - EXT_GIT_BRANCH = 'master'
   - EXT_USER = 'Tautulli'
@@ -25,8 +24,8 @@ repo_vars:
   - CI_PORT='8181'
   - CI_SSL='false'
   - CI_DELAY='120'
-  - CI_DOCKERENV='TZ=US/Pacific'
-  - CI_AUTH='user:password'
+  - CI_DOCKERENV=''
+  - CI_AUTH=''
   - CI_WEBPATH=''
 sponsor_links:
   - { name: "Tautulli", url: "https://tautulli.com/#donate" }
