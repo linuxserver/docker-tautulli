@@ -27,6 +27,8 @@ param_usage_include_ports: true
 param_ports:
   - { external_port: "8181", internal_port: "8181", port_desc: "WebUI" }
 
+readonly_supported: true
+
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
