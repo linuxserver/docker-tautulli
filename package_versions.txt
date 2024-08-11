@@ -19,12 +19,12 @@ c-ares                  1.28.1-r0              apk
 ca-certificates         20240705-r0            apk                      
 ca-certificates-bundle  20240705-r0            apk                      
 catatonit               0.2.0-r0               apk                      
-certifi                 2024.6.2               python                   
+certifi                 2024.7.4               python                   
 cffi                    1.17.0                 python                   
 charset-normalizer      3.3.2                  python                   
 cheroot                 10.0.1                 python                   
 cherrypy                18.10.0                python                   
-cloudinary              1.40.0                 python                   
+cloudinary              1.41.0                 python                   
 coreutils               9.5-r1                 apk                      
 coreutils-env           9.5-r1                 apk                      
 coreutils-fmt           9.5-r1                 apk                      
@@ -44,8 +44,8 @@ gntp                    1.0.3                  python
 html5lib                1.1                    python  (+2 duplicates)  
 httpagentparser         1.9.5                  python                   
 idna                    3.7                    python                   
-importlib-metadata      7.1.0                  python                   
 importlib-metadata      8.0.0                  python                   
+importlib-metadata      8.2.0                  python                   
 importlib-resources     6.4.0                  python  (+1 duplicate)   
 inflect                 7.3.1                  python                   
 ipwhois                 1.2.0                  python                   
@@ -97,14 +97,14 @@ paho-mqtt               2.1.0                  python
 pcre2                   10.43-r0               apk                      
 pip                     24.2                   python                   
 platformdirs            4.2.2                  python  (+1 duplicate)   
-plexapi                 4.15.13                python                   
+plexapi                 4.15.15                python                   
 portend                 3.2.0                  python                   
 procps-ng               4.0.4-r0               apk                      
 profilehooks            1.12.0                 python                   
 pyc                     3.12.3-r1              apk                      
 pycparser               2.22                   python                   
 pycryptodomex           3.20.0                 python                   
-pyjwt                   2.8.0                  python                   
+pyjwt                   2.9.0                  python                   
 pyopenssl               24.2.1                 python                   
 pyparsing               3.1.2                  python                   
 python-dateutil         2.9.0.post0            python                   
@@ -125,8 +125,8 @@ skalibs                 2.14.1.1-r0            apk
 soupsieve               2.5                    python                   
 sqlite-libs             3.45.3-r1              apk                      
 ssl_client              1.36.1-r29             apk                      
-tempora                 5.6.0                  python                   
-tokenize-rt             5.2.0                  python                   
+tempora                 5.7.0                  python                   
+tokenize-rt             6.0.0                  python                   
 tomli                   2.0.1                  python                   
 typeguard               4.3.0                  python                   
 types-python-dateutil   2.9.0.20240316         python                   
