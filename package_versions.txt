@@ -97,7 +97,7 @@ paho-mqtt               2.1.0                  python
 pcre2                   10.43-r0               apk                      
 pip                     24.2                   python                   
 platformdirs            4.2.2                  python  (+1 duplicate)   
-plexapi                 4.15.15                python                   
+plexapi                 4.15.16                python                   
 portend                 3.2.0                  python                   
 procps-ng               4.0.4-r0               apk                      
 profilehooks            1.12.0                 python                   
