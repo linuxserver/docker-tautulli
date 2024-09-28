@@ -15,7 +15,7 @@ bleach                  6.1.0                  python
 brotli-libs             1.1.0-r2               apk                      
 busybox                 1.36.1-r29             apk                      
 busybox-binsh           1.36.1-r29             apk                      
-c-ares                  1.28.1-r0              apk                      
+c-ares                  1.33.1-r0              apk                      
 ca-certificates         20240705-r0            apk                      
 ca-certificates-bundle  20240705-r0            apk                      
 catatonit               0.2.0-r0               apk                      
@@ -54,7 +54,7 @@ jaraco-collections      5.1.0                  python  (+1 duplicate)
 jaraco-context          5.3.0                  python                   
 jaraco-context          6.0.1                  python                   
 jaraco-functools        4.0.1                  python                   
-jaraco-functools        4.0.2                  python                   
+jaraco-functools        4.1.0                  python                   
 jaraco-text             3.12.1                 python                   
 jaraco-text             4.0.0                  python                   
 jq                      1.7.1-r0               apk                      
