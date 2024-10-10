@@ -21,7 +21,7 @@ ca-certificates-bundle  20240705-r0            apk
 catatonit               0.2.0-r0               apk                      
 certifi                 2024.7.4               python                   
 cffi                    1.17.1                 python                   
-charset-normalizer      3.3.2                  python                   
+charset-normalizer      3.4.0                  python                   
 cheroot                 10.0.1                 python                   
 cherrypy                18.10.0                python                   
 cloudinary              1.41.0                 python                   
@@ -101,7 +101,7 @@ plexapi                 4.15.16                python
 portend                 3.2.0                  python                   
 procps-ng               4.0.4-r0               apk                      
 profilehooks            1.12.0                 python                   
-pyc                     3.12.6-r0              apk                      
+pyc                     3.12.7-r0              apk                      
 pycparser               2.22                   python                   
 pycryptodomex           3.21.0                 python                   
 pyjwt                   2.9.0                  python                   
@@ -109,9 +109,9 @@ pyopenssl               24.2.1                 python
 pyparsing               3.1.2                  python                   
 python-dateutil         2.9.0.post0            python                   
 python-twitter          3.5                    python                   
-python3                 3.12.6-r0              apk                      
-python3-pyc             3.12.6-r0              apk                      
-python3-pycache-pyc0    3.12.6-r0              apk                      
+python3                 3.12.7-r0              apk                      
+python3-pyc             3.12.7-r0              apk                      
+python3-pycache-pyc0    3.12.7-r0              apk                      
 pytz                    2024.1                 python                   
 readline                8.2.10-r0              apk                      
 requests                2.32.3                 python                   
