@@ -13,11 +13,6 @@ LABEL maintainer="nemchik,thelamer"
 ENV TAUTULLI_DOCKER=True
 
 RUN \
-  echo "**** install build packages ****" && \
-  apk add --no-cache --virtual=build-dependencies \
-    build-base \
-    cargo \
-    python3-dev && \
   echo "**** install packages ****" && \
   apk add --no-cache \
     git \
@@ -41,23 +36,15 @@ RUN \
     pip \
     wheel && \
   pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.20/ \
-    apscheduler \
-    cryptography \
-    pycryptodomex \
-    pyopenssl && \
-  pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.20/ \
-    -r requirements.txt && \
+    -r https://raw.githubusercontent.com/Tautulli/tautulli-baseimage/refs/heads/python3/requirements.txt && \
   echo "**** Hard Coding versioning ****" && \
   echo "${TAUTULLI_COMMIT}" > /app/tautulli/version.txt && \
   echo "nightly" > /app/tautulli/branch.txt && \
   printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
   echo "**** cleanup ****" && \
-  apk del --purge \
-    build-dependencies && \
   rm -rf \
     /tmp/* \
-    $HOME/.cache \
-    $HOME/.cargo
+    $HOME/.cache
 
 # add local files
 COPY root/ /
