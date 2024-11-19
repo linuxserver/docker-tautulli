@@ -37,6 +37,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "19.11.24:", desc: "Use upstream python packages."}
   - { date: "24.06.24:", desc: "Rebase to Alpine 3.20."}
   - { date: "23.12.23:", desc: "Rebase to Alpine 3.19."}
   - { date: "26.08.23:", desc: "Rebase to Alpine 3.18."}
