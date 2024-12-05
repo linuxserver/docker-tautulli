@@ -71,7 +71,6 @@ This image provides various versions that are available via tags. Please read th
 Access the webui at `<your-ip>:8181`, for more information check out [Tautulli](http://tautulli.com).
 To use the built-in Plex LogViewer you have to add a volume, preferably Read-Only. Then in Tautulli gui settings, under `Plex Media Server`, turn on `Show Advanced` and set the `Logs Folder` to the folder you mapped.
 
- 
 ## Read-Only Operation
 
 This image can be run with a read-only container filesystem. For details please [read the docs](https://docs.linuxserver.io/misc/read-only/).
@@ -79,6 +78,9 @@ This image can be run with a read-only container filesystem. For details please 
 ## Usage
 
 To help you get started creating a container from this image you can either use docker-compose or the docker cli.
+
+>[!NOTE]
+>Unless a parameter is flaged as 'optional', it is *mandatory* and a value must be provided.
 
 ### docker-compose (recommended, [click here for more info](https://docs.linuxserver.io/general/docker-compose))
 
@@ -119,7 +121,7 @@ Containers are configured using parameters passed at runtime (such as those abov
 
 | Parameter | Function |
 | :----: | --- |
-| `-p 8181` | WebUI |
+| `-p 8181:8181` | WebUI |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
