@@ -6,66 +6,103 @@ project_url: "http://tautulli.com"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/tautulli-icon.png"
 project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) is a python based web application for monitoring, analytics and notifications for Plex Media Server."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
-
 # supported architectures
 available_architectures:
-  - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
-  - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
-
+  - {arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
+  - {arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
 # development version
 development_versions: true
 development_versions_items:
-  - { tag: "latest", desc: "Stable Tautulli releases" }
-  - { tag: "develop", desc: "Built at head of Tautulli nightly branch" }
-
+  - {tag: "latest", desc: "Stable Tautulli releases"}
+  - {tag: "develop", desc: "Built at head of Tautulli nightly branch"}
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
 param_usage_include_vols: true
 param_volumes:
-  - { vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/config", desc: "Persistent config files" }
+  - {vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/config", desc: "Persistent config files"}
 param_usage_include_ports: true
 param_ports:
-  - { external_port: "8181", internal_port: "8181", port_desc: "WebUI" }
-
+  - {external_port: "8181", internal_port: "8181", port_desc: "WebUI"}
 readonly_supported: true
-
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
   Access the webui at `<your-ip>:8181`, for more information check out [{{ project_name|capitalize }}]({{ project_url }}).
   To use the built-in Plex LogViewer you have to add a volume, preferably Read-Only. Then in Tautulli gui settings, under `Plex Media Server`, turn on `Show Advanced` and set the `Logs Folder` to the folder you mapped.
-
+# init diagram
+init_diagram: |
+  "tautulli:develop": {
+    docker-mods
+    base {
+      fix-attr +\nlegacy cont-init
+    }
+    docker-mods -> base
+    legacy-services
+    custom services
+    init-services -> legacy-services
+    init-services -> custom services
+    custom services -> legacy-services
+    legacy-services -> ci-service-check
+    init-migrations -> init-adduser
+    init-os-end -> init-config
+    init-config -> init-config-end
+    init-tautulli-config -> init-config-end
+    init-os-end -> init-crontab-config
+    init-mods-end -> init-custom-files
+    base -> init-envfile
+    base -> init-migrations
+    base -> init-mods
+    init-config-end -> init-mods
+    init-mods -> init-mods-end
+    init-mods-package-install -> init-mods-end
+    init-mods -> init-mods-package-install
+    base -> init-os-end
+    init-adduser -> init-os-end
+    init-envfile -> init-os-end
+    init-migrations -> init-os-end
+    init-custom-files -> init-services
+    init-mods-end -> init-services
+    init-config -> init-tautulli-config
+    init-services -> svc-cron
+    svc-cron -> legacy-services
+    init-services -> svc-tautulli
+    svc-tautulli -> legacy-services
+  }
+  Base Images: {
+    "baseimage-alpine:3.20"
+  }
+  "tautulli:develop" <- Base Images
 # changelog
 changelogs:
-  - { date: "18.11.24:", desc: "Use upstream python packages."}
-  - { date: "01.06.24:", desc: "Rebase to Alpine 3.20."}
-  - { date: "23.12.23:", desc: "Rebase to Alpine 3.19."}
-  - { date: "25.05.23:", desc: "Rebase to Alpine 3.18, deprecate armhf." }
-  - { date: "15.12.22:", desc: "Rebase develop branch to Alpine 3.17." }
-  - { date: "04.10.22:", desc: "Rebase develop branch to Alpine 3.16, migrate to s6v3." }
-  - { date: "10.01.22:", desc: "Rebase to Alpine 3.15." }
-  - { date: "11.07.21:", desc: "Add curl package." }
-  - { date: "23.01.21:", desc: "Rebasing to alpine 3.13." }
-  - { date: "11.07.20:", desc: "Add py3-openssl." }
-  - { date: "01.06.20:", desc: "Rebasing to alpine 3.12." }
-  - { date: "31.05.20:", desc: "Rework to python3." }
-  - { date: "12.04.20:", desc: "Added mock from pip and donate links." }
-  - { date: "19.12.19:", desc: "Rebasing to alpine 3.11." }
-  - { date: "28.06.19:", desc: "Rebasing to alpine 3.10." }
-  - { date: "23.03.19:", desc: "Switching to new Base images, shift to arm32v7 tag." }
-  - { date: "22.02.19:", desc: "Rebasing to alpine 3.9." }
-  - { date: "26.01.19:", desc: "Add pipeline logic and multi arch." }
-  - { date: "23.10.18:", desc: "Update plex logs info in readm." }
-  - { date: "16.08.18:", desc: "Rebase to alpine 3.8." }
-  - { date: "10.03.18:", desc: "Rebrand to tautulli." }
-  - { date: "12.12.17:", desc: "Rebase to alpine 3.7." }
-  - { date: "21.07.17:", desc: "Internal git pull instead of at runtime." }
-  - { date: "12.07.17:", desc: "Add inspect commands to README, move to jenkins build and push." }
-  - { date: "25.05.17:", desc: "Rebase to alpine 3.6." }
-  - { date: "20.04.17:", desc: "Add pycryptodomex pip package." }
-  - { date: "07.02.17:", desc: "Rebase to alpine 3.5." }
-  - { date: "09.09.16:", desc: "Add layer badges to README." }
-  - { date: "27.08.16:", desc: "Add badges to README." }
-  - { date: "08.08.16:", desc: "Rebase to alpine linux." }
-  - { date: "16.07.15:", desc: "Inital Release." }
+  - {date: "18.11.24:", desc: "Use upstream python packages."}
+  - {date: "01.06.24:", desc: "Rebase to Alpine 3.20."}
+  - {date: "23.12.23:", desc: "Rebase to Alpine 3.19."}
+  - {date: "25.05.23:", desc: "Rebase to Alpine 3.18, deprecate armhf."}
+  - {date: "15.12.22:", desc: "Rebase develop branch to Alpine 3.17."}
+  - {date: "04.10.22:", desc: "Rebase develop branch to Alpine 3.16, migrate to s6v3."}
+  - {date: "10.01.22:", desc: "Rebase to Alpine 3.15."}
+  - {date: "11.07.21:", desc: "Add curl package."}
+  - {date: "23.01.21:", desc: "Rebasing to alpine 3.13."}
+  - {date: "11.07.20:", desc: "Add py3-openssl."}
+  - {date: "01.06.20:", desc: "Rebasing to alpine 3.12."}
+  - {date: "31.05.20:", desc: "Rework to python3."}
+  - {date: "12.04.20:", desc: "Added mock from pip and donate links."}
+  - {date: "19.12.19:", desc: "Rebasing to alpine 3.11."}
+  - {date: "28.06.19:", desc: "Rebasing to alpine 3.10."}
+  - {date: "23.03.19:", desc: "Switching to new Base images, shift to arm32v7 tag."}
+  - {date: "22.02.19:", desc: "Rebasing to alpine 3.9."}
+  - {date: "26.01.19:", desc: "Add pipeline logic and multi arch."}
+  - {date: "23.10.18:", desc: "Update plex logs info in readm."}
+  - {date: "16.08.18:", desc: "Rebase to alpine 3.8."}
+  - {date: "10.03.18:", desc: "Rebrand to tautulli."}
+  - {date: "12.12.17:", desc: "Rebase to alpine 3.7."}
+  - {date: "21.07.17:", desc: "Internal git pull instead of at runtime."}
+  - {date: "12.07.17:", desc: "Add inspect commands to README, move to jenkins build and push."}
+  - {date: "25.05.17:", desc: "Rebase to alpine 3.6."}
+  - {date: "20.04.17:", desc: "Add pycryptodomex pip package."}
+  - {date: "07.02.17:", desc: "Rebase to alpine 3.5."}
+  - {date: "09.09.16:", desc: "Add layer badges to README."}
+  - {date: "27.08.16:", desc: "Add badges to README."}
+  - {date: "08.08.16:", desc: "Rebase to alpine linux."}
+  - {date: "16.07.15:", desc: "Inital Release."}
