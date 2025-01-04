@@ -25,6 +25,7 @@ param_usage_include_ports: true
 param_ports:
   - {external_port: "8181", internal_port: "8181", port_desc: "WebUI"}
 readonly_supported: true
+nonroot_supported: true
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
@@ -75,6 +76,7 @@ init_diagram: |
   "tautulli:develop" <- Base Images
 # changelog
 changelogs:
+  - {date: "03.01.25:", desc: "Rebase to Alpine 3.21."}
   - {date: "18.11.24:", desc: "Use upstream python packages."}
   - {date: "01.06.24:", desc: "Rebase to Alpine 3.20."}
   - {date: "23.12.23:", desc: "Rebase to Alpine 3.19."}
