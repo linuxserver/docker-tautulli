@@ -26,8 +26,8 @@ cryptography            43.0.3            python
 curl                    8.11.1-r0         apk                      
 findutils               4.10.0-r0         apk                      
 gdbm                    1.24-r0           apk                      
-git                     2.47.1-r0         apk                      
-git-init-template       2.47.1-r0         apk                      
+git                     2.47.2-r0         apk                      
+git-init-template       2.47.2-r0         apk                      
 html5lib                1.1               python                   
 importlib-metadata      8.0.0             python                   
 inflect                 7.3.1             python                   
