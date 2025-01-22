@@ -5,6 +5,7 @@ project_url: "http://tautulli.com"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/tautulli-icon.png"
 project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) is a python based web application for monitoring, analytics and notifications for Plex Media Server."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
+project_categories: "Media Tools"
 # supported architectures
 available_architectures:
   - {arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
