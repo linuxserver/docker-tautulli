@@ -42,7 +42,7 @@ libbz2                  1.0.8-r6          apk
 libcrypto3              3.3.3-r0          apk                      
 libcurl                 8.12.1-r0         apk                      
 libexpat                2.6.4-r0          apk                      
-libffi                  3.4.6-r0          apk                      
+libffi                  3.4.7-r0          apk                      
 libgcc                  14.2.0-r4         apk                      
 libidn2                 2.3.7-r0          apk                      
 libintl                 0.22.5-r0         apk                      
@@ -88,7 +88,7 @@ tomli                   2.0.1             python
 typeguard               4.3.0             python                   
 typing-extensions       4.12.2            python                   
 tzdata                  2025a-r0          apk                      
-tzlocal                 5.3               python                   
+tzlocal                 5.3.1             python                   
 utmps-libs              0.1.2.3-r2        apk                      
 wheel                   0.43.0            python                   
 wheel                   0.45.1            python                   
