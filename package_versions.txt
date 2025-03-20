@@ -41,7 +41,7 @@ libbsd                  0.12.2-r0         apk
 libbz2                  1.0.8-r6          apk                      
 libcrypto3              3.3.3-r0          apk                      
 libcurl                 8.12.1-r0         apk                      
-libexpat                2.6.4-r0          apk                      
+libexpat                2.7.0-r0          apk                      
 libffi                  3.4.7-r0          apk                      
 libgcc                  14.2.0-r4         apk                      
 libidn2                 2.3.7-r0          apk                      
@@ -78,7 +78,7 @@ python3-pycache-pyc0    3.12.9-r0         apk
 pytz                    2025.1            python                   
 readline                8.2.13-r0         apk                      
 scanelf                 1.3.8-r1          apk                      
-setuptools              76.0.0            python                   
+setuptools              77.0.3            python                   
 shadow                  4.16.0-r1         apk                      
 six                     1.17.0            python                   
 skalibs-libs            2.14.3.0-r0       apk                      
@@ -90,8 +90,7 @@ typing-extensions       4.12.2            python
 tzdata                  2025a-r0          apk                      
 tzlocal                 5.3.1             python                   
 utmps-libs              0.1.2.3-r2        apk                      
-wheel                   0.43.0            python                   
-wheel                   0.45.1            python                   
+wheel                   0.45.1            python  (+1 duplicate)   
 xz-libs                 5.6.3-r0          apk                      
 zipp                    3.19.2            python                   
 zlib                    1.3.1-r2          apk                      
