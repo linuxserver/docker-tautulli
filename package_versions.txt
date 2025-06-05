@@ -96,7 +96,7 @@ ssl_client              1.37.0-r12        apk
 tomli                   2.0.1             python                   
 typeguard               4.3.0             python                   
 typing-extensions       4.12.2            python                   
-typing-extensions       4.13.2            python                   
+typing-extensions       4.14.0            python                   
 tzdata                  2025b-r0          apk                      
 tzlocal                 5.3.1             python                   
 utmps-libs              0.1.2.3-r2        apk                      
