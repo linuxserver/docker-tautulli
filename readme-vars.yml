@@ -69,7 +69,7 @@ init_diagram: |
     svc-tautulli -> legacy-services
   }
   Base Images: {
-    "baseimage-alpine:3.21"
+    "baseimage-alpine:3.22"
   }
   "tautulli:develop" <- Base Images
 # changelog
