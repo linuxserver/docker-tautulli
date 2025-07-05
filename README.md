@@ -292,6 +292,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **05.07.25:** - Rebase to Alpine 3.22.
 * **03.01.25:** - Rebase to Alpine 3.21.
 * **19.11.24:** - Use upstream python packages.
 * **24.06.24:** - Rebase to Alpine 3.20.
