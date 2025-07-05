@@ -74,6 +74,7 @@ init_diagram: |
   "tautulli:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "05.07.25:", desc: "Rebase to Alpine 3.22."}
   - {date: "03.01.25:", desc: "Rebase to Alpine 3.21."}
   - {date: "19.11.24:", desc: "Use upstream python packages."}
   - {date: "24.06.24:", desc: "Rebase to Alpine 3.20."}
