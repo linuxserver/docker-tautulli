@@ -30,8 +30,8 @@ cryptography            44.0.2            python
 curl                    8.14.1-r1         apk                      
 findutils               4.10.0-r0         apk                      
 gdbm                    1.24-r0           apk                      
-git                     2.49.0-r0         apk                      
-git-init-template       2.49.0-r0         apk                      
+git                     2.49.1-r0         apk                      
+git-init-template       2.49.1-r0         apk                      
 gui                     UNKNOWN           binary                   
 gui-32                  UNKNOWN           binary                   
 gui-64                  UNKNOWN           binary                   
