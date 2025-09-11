@@ -80,7 +80,7 @@ pip                     25.2              python
 platformdirs            4.2.2             python                   
 procps-ng               4.0.4-r3          apk                      
 pyc                     3.12.11-r0        apk                      
-pycparser               2.22              python                   
+pycparser               2.23              python                   
 pyopenssl               25.0.0            python                   
 python3                 3.12.11-r0        apk                      
 python3-pyc             3.12.11-r0        apk                      
