@@ -5,7 +5,7 @@ alpine-baselayout       3.7.0-r0          apk
 alpine-baselayout-data  3.7.0-r0          apk                      
 alpine-keys             2.5-r0            apk                      
 alpine-release          3.22.1-r0         apk                      
-apk-tools               2.14.9-r2         apk                      
+apk-tools               2.14.9-r3         apk                      
 apscheduler             3.10.1            python                   
 autocommand             2.2.2             python                   
 backports-tarfile       1.2.0             python                   
@@ -44,7 +44,7 @@ jaraco-context          5.3.0             python
 jaraco-functools        4.0.1             python                   
 jaraco-text             3.12.1            python                   
 jq                      1.8.0-r0          apk                      
-libapk2                 2.14.9-r2         apk                      
+libapk2                 2.14.9-r3         apk                      
 libattr                 2.5.2-r2          apk                      
 libbsd                  0.12.2-r0         apk                      
 libbz2                  1.0.8-r6          apk                      
