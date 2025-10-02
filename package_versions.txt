@@ -50,7 +50,7 @@ libbsd                  0.12.2-r0         apk
 libbz2                  1.0.8-r6          apk                      
 libcrypto3              3.5.3-r1          apk                      
 libcurl                 8.14.1-r1         apk                      
-libexpat                2.7.2-r0          apk                      
+libexpat                2.7.3-r0          apk                      
 libffi                  3.4.8-r0          apk                      
 libgcc                  14.2.0-r6         apk                      
 libidn2                 2.3.7-r0          apk                      
