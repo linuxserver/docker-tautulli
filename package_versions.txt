@@ -75,7 +75,7 @@ nghttp2-libs            1.65.0-r0         apk
 nsProcess               UNKNOWN           binary                   
 oniguruma               6.9.10-r0         apk                      
 packaging               24.2              python                   
-pcre2                   10.43-r1          apk                      
+pcre2                   10.46-r0          apk                      
 pip                     25.2              python                   
 platformdirs            4.2.2             python                   
 procps-ng               4.0.4-r3          apk                      
