@@ -73,8 +73,7 @@ nghttp2-libs            1.68.0-r0         apk
 nghttp3                 1.13.1-r0         apk                      
 nsProcess               UNKNOWN           binary                   
 oniguruma               6.9.10-r0         apk                      
-packaging               25.0              python                   
-packaging               26.0              python                   
+packaging               26.0              python  (+1 duplicate)   
 pcre2                   10.47-r0          apk                      
 pip                     25.3              python                   
 platformdirs            4.4.0             python                   
@@ -88,7 +87,7 @@ python3-pycache-pyc0    3.12.12-r0        apk
 pytz                    2025.2            python                   
 readline                8.3.1-r0          apk                      
 scanelf                 1.3.8-r2          apk                      
-setuptools              80.10.1           python                   
+setuptools              80.10.2           python                   
 shadow                  4.18.0-r0         apk                      
 six                     1.17.0            python                   
 skalibs-libs            2.14.4.0-r0       apk                      
@@ -99,8 +98,7 @@ typing-extensions       4.15.0            python
 tzdata                  2025c-r0          apk                      
 tzlocal                 5.3.1             python                   
 utmps-libs              0.1.3.1-r0        apk                      
-wheel                   0.45.1            python                   
-wheel                   0.46.3            python                   
+wheel                   0.46.3            python  (+1 duplicate)   
 xz-libs                 5.8.2-r0          apk                      
 zipp                    3.23.0            python                   
 zlib                    1.3.1-r2          apk                      
