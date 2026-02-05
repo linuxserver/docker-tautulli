@@ -4,7 +4,7 @@ acl-libs                2.3.2-r1          apk
 alpine-baselayout       3.7.1-r8          apk                      
 alpine-baselayout-data  3.7.1-r8          apk                      
 alpine-keys             2.6-r0            apk                      
-alpine-release          3.23.2-r0         apk                      
+alpine-release          3.23.3-r0         apk                      
 apk-tools               3.0.3-r1          apk                      
 apscheduler             3.10.1            python                   
 autocommand             2.2.2             python                   
@@ -46,9 +46,9 @@ libapk                  3.0.3-r1          apk
 libattr                 2.5.2-r2          apk                      
 libbsd                  0.12.2-r0         apk                      
 libbz2                  1.0.8-r6          apk                      
-libcrypto3              3.5.4-r0          apk                      
+libcrypto3              3.5.5-r0          apk                      
 libcurl                 8.17.0-r1         apk                      
-libexpat                2.7.3-r0          apk                      
+libexpat                2.7.4-r0          apk                      
 libffi                  3.5.2-r0          apk                      
 libgcc                  15.2.0-r2         apk                      
 libidn2                 2.3.8-r0          apk                      
@@ -58,7 +58,7 @@ libncursesw             6.5_p20251123-r0  apk
 libpanelw               6.5_p20251123-r0  apk                      
 libproc2                4.0.5-r0          apk                      
 libpsl                  0.21.5-r3         apk                      
-libssl3                 3.5.4-r0          apk                      
+libssl3                 3.5.5-r0          apk                      
 libstdc++               15.2.0-r2         apk                      
 libunistring            1.4.1-r0          apk                      
 linux-pam               1.7.1-r2          apk                      
@@ -75,7 +75,7 @@ nsProcess               UNKNOWN           binary
 oniguruma               6.9.10-r0         apk                      
 packaging               26.0              python  (+1 duplicate)   
 pcre2                   10.47-r0          apk                      
-pip                     25.3              python                   
+pip                     26.0.1            python                   
 platformdirs            4.4.0             python                   
 procps-ng               4.0.5-r0          apk                      
 pyc                     3.12.12-r0        apk                      
