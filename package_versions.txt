@@ -26,7 +26,7 @@ coreutils               9.8-r1            apk
 coreutils-env           9.8-r1            apk                      
 coreutils-fmt           9.8-r1            apk                      
 coreutils-sha512sum     9.8-r1            apk                      
-cryptography            44.0.2            python                   
+cryptography            46.0.4            python                   
 curl                    8.17.0-r1         apk                      
 findutils               4.10.0-r0         apk                      
 gdbm                    1.26-r0           apk                      
@@ -80,7 +80,7 @@ platformdirs            4.4.0             python
 procps-ng               4.0.5-r0          apk                      
 pyc                     3.12.12-r0        apk                      
 pycparser               3.0               python                   
-pyopenssl               25.0.0            python                   
+pyopenssl               26.0.0            python                   
 python3                 3.12.12-r0        apk                      
 python3-pyc             3.12.12-r0        apk                      
 python3-pycache-pyc0    3.12.12-r0        apk                      
