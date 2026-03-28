@@ -25,7 +25,7 @@ coreutils               9.8-r1            apk
 coreutils-env           9.8-r1            apk                      
 coreutils-fmt           9.8-r1            apk                      
 coreutils-sha512sum     9.8-r1            apk                      
-cryptography            46.0.4            python                   
+cryptography            46.0.6            python                   
 curl                    8.17.0-r1         apk                      
 findutils               4.10.0-r0         apk                      
 gdbm                    1.26-r0           apk                      
