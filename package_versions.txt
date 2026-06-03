@@ -72,7 +72,7 @@ nsProcess               UNKNOWN           binary
 oniguruma               6.9.10-r0         apk                      
 packaging               26.0              python                   
 pcre2                   10.47-r0          apk                      
-pip                     26.1.1            python                   
+pip                     26.1.2            python                   
 platformdirs            4.4.0             python                   
 procps-ng               4.0.5-r0          apk                      
 pyc                     3.12.13-r0        apk                      
