@@ -4,7 +4,7 @@ acl-libs                2.3.2-r1          apk
 alpine-baselayout       3.7.2-r0          apk                      
 alpine-baselayout-data  3.7.2-r0          apk                      
 alpine-keys             2.6-r0            apk                      
-alpine-release          3.23.4-r0         apk                      
+alpine-release          3.23.5-r0         apk                      
 apk-tools               3.0.6-r0          apk                      
 autocommand             2.2.2             python                   
 backports-tarfile       1.2.0             python                   
@@ -25,7 +25,7 @@ coreutils               9.8-r1            apk
 coreutils-env           9.8-r1            apk                      
 coreutils-fmt           9.8-r1            apk                      
 coreutils-sha512sum     9.8-r1            apk                      
-cryptography            46.0.7            python                   
+cryptography            49.0.0            python                   
 curl                    8.19.0-r0         apk                      
 findutils               4.10.0-r0         apk                      
 gdbm                    1.26-r0           apk                      
@@ -77,7 +77,7 @@ platformdirs            4.4.0             python
 procps-ng               4.0.5-r0          apk                      
 pyc                     3.12.13-r0        apk                      
 pycparser               3.0               python                   
-pyopenssl               26.0.0            python                   
+pyopenssl               26.3.0            python                   
 python3                 3.12.13-r0        apk                      
 python3-pyc             3.12.13-r0        apk                      
 python3-pycache-pyc0    3.12.13-r0        apk                      
