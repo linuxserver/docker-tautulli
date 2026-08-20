@@ -27,7 +27,6 @@ coreutils-fmt           9.11-r0           apk
 coreutils-sha512sum     9.11-r0           apk                      
 cryptography            50.0.0            python                   
 curl                    8.21.0-r0         apk                      
-expat                   2.8.2-r0          apk                      
 findutils               4.10.0-r1         apk                      
 gdbm                    1.26-r0           apk                      
 git                     2.54.0-r0         apk                      
@@ -48,7 +47,7 @@ libbsd                  0.12.2-r0         apk
 libbz2                  1.0.8-r6          apk                      
 libcrypto3              3.5.7-r0          apk                      
 libcurl                 8.21.0-r0         apk                      
-libexpat                2.8.2-r0          apk                      
+libexpat                2.8.3-r0          apk                      
 libffi                  3.5.2-r1          apk                      
 libgcc                  15.2.0-r5         apk                      
 libidn2                 2.3.8-r0          apk                      
@@ -76,12 +75,12 @@ pcre2                   10.47-r1          apk
 pip                     26.2.1            python                   
 platformdirs            4.4.0             python                   
 procps-ng               4.0.6-r0          apk                      
-pyc                     3.14.7-r0         apk                      
+pyc                     3.14.7-r1         apk                      
 pycparser               3.0               python                   
 pyopenssl               26.4.0            python                   
-python3                 3.14.7-r0         apk                      
-python3-pyc             3.14.7-r0         apk                      
-python3-pycache-pyc0    3.14.7-r0         apk                      
+python3                 3.14.7-r1         apk                      
+python3-pyc             3.14.7-r1         apk                      
+python3-pycache-pyc0    3.14.7-r1         apk                      
 readline                8.3.3-r1          apk                      
 scanelf                 1.3.9-r1          apk                      
 setuptools              84.0.0            python                   
