@@ -86,7 +86,7 @@ scanelf                 1.3.9-r1          apk
 setuptools              84.0.0            python                   
 shadow                  4.18.0-r1         apk                      
 skalibs-libs            2.15.0.0-r0       apk                      
-sqlite-libs             3.53.2-r0         apk                      
+sqlite-libs             3.53.4-r0         apk                      
 ssl_client              1.37.0-r31        apk                      
 tomli                   2.4.0             python                   
 tzdata                  2026c-r0          apk                      
