@@ -45,9 +45,9 @@ libapk                  3.0.7-r0          apk
 libattr                 2.5.2-r2          apk                      
 libbsd                  0.12.2-r0         apk                      
 libbz2                  1.0.8-r6          apk                      
-libcrypto3              3.5.7-r0          apk                      
+libcrypto3              3.5.8-r0          apk                      
 libcurl                 8.21.0-r0         apk                      
-libexpat                2.8.3-r0          apk                      
+libexpat                2.8.4-r0          apk                      
 libffi                  3.5.2-r1          apk                      
 libgcc                  15.2.0-r5         apk                      
 libidn2                 2.3.8-r0          apk                      
@@ -57,7 +57,7 @@ libncursesw             6.6_p20260516-r0  apk
 libpanelw               6.6_p20260516-r0  apk                      
 libproc2                4.0.6-r0          apk                      
 libpsl                  0.21.5-r3         apk                      
-libssl3                 3.5.7-r0          apk                      
+libssl3                 3.5.8-r0          apk                      
 libstdc++               15.2.0-r5         apk                      
 libunistring            1.4.2-r0          apk                      
 linux-pam               1.7.1-r2          apk                      
@@ -71,7 +71,7 @@ nghttp2-libs            1.69.0-r0         apk
 nsProcess               UNKNOWN           binary                   
 oniguruma               6.9.10-r0         apk                      
 packaging               26.0              python                   
-pcre2                   10.47-r1          apk                      
+pcre2                   10.48-r0          apk                      
 pip                     26.2.1            python                   
 platformdirs            4.4.0             python                   
 procps-ng               4.0.6-r0          apk                      
