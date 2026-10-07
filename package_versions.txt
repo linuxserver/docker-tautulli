@@ -25,7 +25,7 @@ coreutils               9.11-r0           apk
 coreutils-env           9.11-r0           apk                      
 coreutils-fmt           9.11-r0           apk                      
 coreutils-sha512sum     9.11-r0           apk                      
-cryptography            50.0.0            python                   
+cryptography            50.0.2            python                   
 curl                    8.22.0-r0         apk                      
 findutils               4.10.0-r1         apk                      
 gdbm                    1.26-r0           apk                      
@@ -45,7 +45,7 @@ libapk                  3.0.8-r0          apk
 libattr                 2.5.2-r2          apk                      
 libbsd                  0.12.2-r0         apk                      
 libbz2                  1.0.8-r6          apk                      
-libcrypto3              3.5.8-r0          apk                      
+libcrypto3              3.5.9-r0          apk                      
 libcurl                 8.22.0-r0         apk                      
 libexpat                2.8.5-r0          apk                      
 libffi                  3.5.2-r1          apk                      
@@ -57,7 +57,7 @@ libncursesw             6.6_p20260516-r0  apk
 libpanelw               6.6_p20260516-r0  apk                      
 libproc2                4.0.6-r0          apk                      
 libpsl                  0.21.5-r3         apk                      
-libssl3                 3.5.8-r0          apk                      
+libssl3                 3.5.9-r0          apk                      
 libstdc++               15.2.0-r5         apk                      
 libunistring            1.4.2-r0          apk                      
 linux-pam               1.7.1-r2          apk                      
@@ -67,7 +67,7 @@ musl                    1.2.6-r2          apk
 musl-utils              1.2.6-r2          apk                      
 ncurses-terminfo-base   6.6_p20260516-r0  apk                      
 netcat-openbsd          1.234.1-r0        apk                      
-nghttp2-libs            1.69.0-r0         apk                      
+nghttp2-libs            1.70.0-r0         apk                      
 nsProcess               UNKNOWN           binary                   
 oniguruma               6.9.10-r0         apk                      
 packaging               26.0              python                   
