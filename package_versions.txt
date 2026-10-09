@@ -76,7 +76,7 @@ pip                     26.2.1            python
 platformdirs            4.4.0             python                   
 procps-ng               4.0.6-r0          apk                      
 pyc                     3.14.8-r0         apk                      
-pycparser               3.1               python                   
+pycparser               3.11              python                   
 pyopenssl               26.4.0            python                   
 python3                 3.14.8-r0         apk                      
 python3-pyc             3.14.8-r0         apk                      
